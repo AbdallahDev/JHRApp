@@ -11,6 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:layoutDirection="rtl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -18,7 +19,7 @@
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/news" />
+            android:text="@string/about" />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
@@ -28,6 +29,6 @@
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/home" />
+            android:text="@string/news" />
     </android.support.design.widget.TabLayout>
 </android.support.constraint.ConstraintLayout>
