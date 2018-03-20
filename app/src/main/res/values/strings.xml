@@ -4,4 +4,7 @@
     <string name="council">المجلس الحالي</string>
     <string name="news">الاخبار</string>
     <string name="title">مجلس النواب الاردني</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
