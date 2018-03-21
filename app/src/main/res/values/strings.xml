@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">مجلس النواب الاردني</string>
     <string name="about">عن المجلس</string>
-    <string name="council">المجلس الحالي</string>
+    <string name="deputies">اعضاء المجلس</string>
     <string name="news">الاخبار</string>
     <string name="title">مجلس النواب الاردني</string>
 
