@@ -28,14 +28,12 @@ class MainActivity : AppCompatActivity() {
                 val obj = AboutFragment()
                 tr.replace(R.id.fc, obj)
                 tr.commit()
+            } else if (item.itemId == R.id.deputies) {
+                val tr = fragmentManager.beginTransaction()
+                val obj = DeputiesFragment()
+                tr.replace(R.id.fc, obj)
+                tr.commit()
             }
-
-//            else if (item.itemId == R.id.deputies) {
-//                val tr = fragmentManager.beginTransaction()
-//                val obj = DeputiesFragment()
-//                tr.replace(R.id.fc, obj)
-//                tr.commit()
-//            }
 
             item.isChecked = true
 
