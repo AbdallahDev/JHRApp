@@ -37,9 +37,9 @@ class AboutFragment : Fragment() {
 class FPA(fm: android.support.v4.app.FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getItem(position: Int): android.support.v4.app.Fragment? {
         return when (position) {
-            0 -> DeputiesFragment()
-            1 -> DeputiesFragment()
-            else -> DeputiesFragment()
+            0 -> RolesFragment()
+            1 -> SessionsFragment()
+            else -> OfficeFragment()
         }
     }
 
