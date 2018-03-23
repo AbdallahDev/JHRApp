@@ -23,8 +23,9 @@ class AboutFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_about, container, false)
 
-        adapter = FPA(activity!!.supportFragmentManager)
+        adapter = FPA(childFragmentManager)
         view.vp.adapter = adapter
+        view.vp.currentItem = 0
         view.vp.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(view.tabs))
         view.tabs.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(view.vp))
 
@@ -46,5 +47,6 @@ class FPA(fm: android.support.v4.app.FragmentManager) : FragmentPagerAdapter(fm)
     override fun getCount(): Int {
         return 3
     }
+
 }
 
