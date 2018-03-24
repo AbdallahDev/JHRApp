@@ -17,6 +17,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/khaleel_atieh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -159,6 +160,5 @@
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
-
 
 </LinearLayout>
