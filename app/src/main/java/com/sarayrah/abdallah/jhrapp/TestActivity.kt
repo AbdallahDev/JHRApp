@@ -10,9 +10,5 @@ class TestActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
 
-        val tr = supportFragmentManager.beginTransaction()
-        val obj = Test2Fragment()
-        tr.replace(R.id.fc, obj)
-        tr.commit()
     }
 }
