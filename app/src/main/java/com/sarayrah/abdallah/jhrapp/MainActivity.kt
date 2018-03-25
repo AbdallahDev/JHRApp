@@ -1,10 +1,11 @@
 package com.sarayrah.abdallah.jhrapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,6 +42,13 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 }
 
