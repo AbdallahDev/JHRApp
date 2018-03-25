@@ -13,6 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //the code bellow to insert into the about table inside the jhr.db
+        val objDatabaseHelper = DatabaseHelper(this)
+        val db = objDatabaseHelper.writableDatabase
+//        db.execSQL("insert into about values(0, 'test', 'test')",
+//                arrayOf())
+
         //this code bellow to insert custom action bar title, to make the title layout direction rtl
         supportActionBar!!.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
         supportActionBar!!.setCustomView(R.layout.titlebar)
