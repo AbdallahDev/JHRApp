@@ -22,14 +22,14 @@ class AboutFragment : Fragment() {
         view.council_roles.setOnClickListener {
             Values.page_name = "council_roles_body"
             val tr = fragmentManager?.beginTransaction()
-            val obj = RolesFragment()
+            val obj = AboutPageFragment()
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
         view.sessions.setOnClickListener {
             Values.page_name = "sessions_body"
             val tr = fragmentManager?.beginTransaction()
-            val obj = RolesFragment()
+            val obj = AboutPageFragment()
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
