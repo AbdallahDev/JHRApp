@@ -27,7 +27,7 @@
             android:layout_weight="1"
             android:background="@drawable/about_title"
             android:padding="2dp"
-            android:text="وظائف مجلس النواب"
+            android:text="@string/council_roles_title"
             android:textAlignment="center"
             android:textColor="#fff"
             android:textStyle="bold" />
@@ -55,7 +55,7 @@
             android:layout_weight="1"
             android:background="@drawable/about_title"
             android:padding="2dp"
-            android:text="الدورات"
+            android:text="@string/sessions_title"
             android:textAlignment="center"
             android:textColor="#fff"
             android:textStyle="bold" />
