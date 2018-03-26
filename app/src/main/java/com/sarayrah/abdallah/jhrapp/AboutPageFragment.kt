@@ -27,6 +27,7 @@ class AboutPageFragment : Fragment() {
             "executive_office_body" -> view.tv.setText(R.string.executive_office_body)
             "committees_body" -> view.tv.setText(R.string.committees_body)
             "meetings_body" -> view.tv.setText(R.string.meetings_body)
+            "blocs_coalitions_body" -> view.tv.setText(R.string.blocs_coalitions_body)
         }
 
         return view
