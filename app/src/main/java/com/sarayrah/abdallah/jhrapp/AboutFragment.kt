@@ -33,6 +33,20 @@ class AboutFragment : Fragment() {
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
+        view.permanent_office.setOnClickListener {
+            Values.page_name = "permanent_office_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = AboutPageFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.executive_office.setOnClickListener {
+            Values.page_name = "executive_office_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = AboutPageFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
 
         return view
     }
