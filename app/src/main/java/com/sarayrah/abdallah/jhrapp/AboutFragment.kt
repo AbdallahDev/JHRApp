@@ -68,6 +68,13 @@ class AboutFragment : Fragment() {
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
+        view.legislation_stages.setOnClickListener {
+            Values.page_name = "legislation_stages_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = AboutPageFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
 
         return view
     }
