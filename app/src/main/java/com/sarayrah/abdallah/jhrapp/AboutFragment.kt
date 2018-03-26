@@ -75,6 +75,13 @@ class AboutFragment : Fragment() {
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
+        view.immunity.setOnClickListener {
+            Values.page_name = "immunity_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = AboutPageFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
 
         return view
     }
