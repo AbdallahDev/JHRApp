@@ -54,6 +54,13 @@ class AboutFragment : Fragment() {
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
+        view.meetings.setOnClickListener {
+            Values.page_name = "meetings_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = AboutPageFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
 
         return view
     }

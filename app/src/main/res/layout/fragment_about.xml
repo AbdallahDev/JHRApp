@@ -146,6 +146,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/meetings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
@@ -166,7 +167,7 @@
             android:layout_weight="1"
             android:background="@drawable/about_title"
             android:padding="2dp"
-            android:text="الجلسات"
+            android:text="@string/meetings_title"
             android:textAlignment="center"
             android:textColor="#fff"
             android:textStyle="bold" />
