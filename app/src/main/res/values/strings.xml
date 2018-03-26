@@ -7,8 +7,6 @@
     <string name="about_menu_item">عن المجلس</string>
     <string name="deputies_menu_item">الاعضاء</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="council_roles_title">وظائف مجلس النواب</string>
     <string name="council_roles_body"><b>تناط بمجلس النواب وظيفتين أساسيتين هما:</b>\n\n
 <b>أولاً: التشريع:</b>\n\n
