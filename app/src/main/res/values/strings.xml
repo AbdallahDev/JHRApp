@@ -71,4 +71,6 @@
 * رئيس الهيئة الاستشارية لنادي شباب الحسين\n
 * نقابة المهندسين الأردنيين\n
 * نقابة المقاولين الأردنيين\n</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
