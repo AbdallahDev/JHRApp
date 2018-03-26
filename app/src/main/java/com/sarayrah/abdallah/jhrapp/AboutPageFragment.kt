@@ -30,6 +30,7 @@ class AboutPageFragment : Fragment() {
             "blocs_coalitions_body" -> view.tv.setText(R.string.blocs_coalitions_body)
             "legislation_stages_body" -> view.tv.setText(R.string.legislation_stages_body)
             "immunity_body" -> view.tv.setText(R.string.immunity_body)
+            "diplomacy_body" -> view.tv.setText(R.string.diplomacy_body)
         }
 
         return view
