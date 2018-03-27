@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,7 +26,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/khaleel_atieh" />
+                    android:src="@drawable/ic_launcher_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -35,7 +34,8 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="النائب خليل عطية"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -47,7 +47,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/awaesheh" />
+                    android:src="@drawable/ic_launcher_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -55,7 +55,8 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="النائب عبدالرحمن العوايشة"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -67,7 +68,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/braiseh" />
+                    android:src="@drawable/ic_launcher_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,7 +76,8 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="النائب محمد راشد البرايسة"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -87,7 +89,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/mosa" />
+                    android:src="@drawable/ic_launcher_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -95,7 +97,8 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="النائب موسى علي محمد هنطش"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -107,7 +110,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/akaileh" />
+                    android:src="@drawable/ic_launcher_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,7 +118,8 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="النائب عبدالله علي عودة العكايلة"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -127,7 +131,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/yahyah" />
+                    android:src="@drawable/ic_launcher_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -135,7 +139,8 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="النائب يحيى محمد محمود السعود"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -147,7 +152,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/wahesh" />
+                    android:src="@drawable/ic_launcher_background" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -155,7 +160,8 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="النائب موسى علي محمد الوحش"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp" />
             </LinearLayout>
 
         </LinearLayout>

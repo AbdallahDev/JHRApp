@@ -15,7 +15,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:src="@drawable/khaleel_atieh" />
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:layout_width="wrap_content"
