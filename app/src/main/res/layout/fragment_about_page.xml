@@ -16,7 +16,7 @@
                 android:id="@+id/tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="صفحات عن المجلس" />
+                android:text="@string/about" />
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
