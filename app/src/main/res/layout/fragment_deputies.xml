@@ -26,16 +26,16 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@mipmap/khaleel_atieh_ic_launcher_round" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="النائب خليل عطية"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -53,10 +53,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="النائب عبدالرحمن العوايشة"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -74,10 +74,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="النائب محمد راشد البرايسة"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -95,10 +95,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="النائب موسى علي محمد هنطش"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -116,10 +116,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="النائب عبدالله علي عودة العكايلة"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -137,10 +137,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="النائب يحيى محمد محمود السعود"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -158,10 +158,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="النائب موسى علي محمد الوحش"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="10dp" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>
