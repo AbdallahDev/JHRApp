@@ -549,6 +549,10 @@
 لقد كان لانشاء هذا النوع من اللجان والجمعيات وتفعيل دورها أثر هام في توطيد العلاقات بين البرلمان الاردني وبرلمانات العالم الأخرى مما انعكس بالتالي ايجابيا على العلاقات السياسية بين حكومة المملكة الأردنية الهاشمية وحكومات تلك الدول وذلك من خلال تقريب وجهات النظر وتوحيد المواقف والإطلاع على أخر المستجدات في تلك الدول وبيان موقف البرلمان الأردني من جميع القضايا المطروحة.\n\n</string>
 
     //bellow are the values for the deputies titles and bodies
+    <string name="deputy_info">معلومات النائب</string>
+    <string name="andre_hawari_title">النائب اندريه حواري</string>
     <string name="khaleel_atieh_title">النائب خليل عطية</string>
+    <string name="abdulrahman_owaisha_title">النائب عبدالرحمن العوايشة</string>
+    <string name="mohamed_baraisa_title">النائب محمد راشد البرايسة</string>
 
 </resources>
