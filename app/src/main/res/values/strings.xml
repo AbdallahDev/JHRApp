@@ -551,6 +551,10 @@
     //bellow are the values for the deputies titles and bodies
     <string name="deputy_info">معلومات النائب</string>
     <string name="andre_hawari_title">النائب اندريه حواري</string>
+    <string name="andre_hawari_body"><b>اللقب</b>:\tسعادة المحامي\n\n
+<b>الجنس</b>:\tذكر\n\n
+<b>الحالة الاجتماعية</b>:\tمتزوج\n\n
+<b>تاريخ الميلاد</b>:\tسبت 9 يناير 1982\n\n</string>
     <string name="khaleel_atieh_title">النائب خليل عطية</string>
     <string name="abdulrahman_owaisha_title">النائب عبدالرحمن العوايشة</string>
     <string name="mohamed_baraisa_title">النائب محمد راشد البرايسة</string>

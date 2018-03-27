@@ -2,20 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="10dp"
     android:layoutDirection="rtl"
     android:orientation="horizontal"
     tools:context="com.sarayrah.abdallah.jhrapp.DeputyInfoFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/deputy_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="10dp"
         android:src="@drawable/ic_launcher_background" />
 
     <TextView
+        android:id="@+id/deputy_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/deputy_info" />
+        android:text="@string/andre_hawari_body" />
 
 </LinearLayout>

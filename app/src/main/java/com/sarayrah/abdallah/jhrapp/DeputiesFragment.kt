@@ -21,7 +21,7 @@ class DeputiesFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_deputies, container, false)
 
         view.andre_hawari.setOnClickListener {
-            Values.deputy_name = "andre_hawari"
+            Values.deputy_name = "andre_hawari_body"
             val tr = fragmentManager?.beginTransaction()
             val obj = DeputyInfoFragment()
             tr?.replace(R.id.fc, obj)
