@@ -36,6 +36,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.khaleel_atieh_ic_launcher_round)
                 })
             }
+            "abdulrahman_owaisha_body" -> {
+                view.deputy_tv.setText(R.string.abdulrahman_owaisha_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.abdulrahman_owaisha_ic_launcher_round)
+                })
+            }
         }
 
         return view
