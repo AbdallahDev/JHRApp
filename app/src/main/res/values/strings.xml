@@ -556,6 +556,18 @@
 <b>الحالة الاجتماعية</b>:\tمتزوج\n\n
 <b>تاريخ الميلاد</b>:\tسبت 9 يناير 1982\n\n</string>
     <string name="khaleel_atieh_title">النائب خليل عطية</string>
+    <string name="khaleel_atieh_body"><b>اللقب</b>:\tسعادة المهندس\n\n
+<b>الجنس</b>:\tذكر\n\n
+<b>الحالة الاجتماعية</b>:\ارمل\n\n
+<b>تاريخ الميلاد</b>:\سبت 17 مايو 1958\n\n\n
+
+<b>الخبرات والوظائف السابقة</b>\n
+\t\t*\tعمل في القطاع الخاص وإدارة الأعمال\n\n\n
+
+<b>العضوية في منظمات المجتمع المدني</b>\n
+\t\t*\tرئيس الهيئة الاستشارية لنادي شباب الحسين\n
+\t\t*\tنقابة المهندسين الأردنيين\n
+\t\t*\tنقابة المقاولين الأردنيين\n</string>
     <string name="abdulrahman_owaisha_title">النائب عبدالرحمن العوايشة</string>
     <string name="mohamed_baraisa_title">النائب محمد راشد البرايسة</string>
     <string name="mosa_hantash_title">النائب موسى علي محمد هنطش</string>
