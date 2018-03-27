@@ -20,7 +20,15 @@ class DeputiesFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_deputies, container, false)
 
+        view.andre_hawari.setOnClickListener {
+            Values.deputy_name = "andre_hawari"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
         view.khaleel_atieh.setOnClickListener {
+            Values.deputy_name = "khaleel_atieh_body"
             val tr = fragmentManager?.beginTransaction()
             val obj = DeputyInfoFragment()
             tr?.replace(R.id.fc, obj)

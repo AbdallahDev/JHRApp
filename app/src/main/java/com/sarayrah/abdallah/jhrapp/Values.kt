@@ -7,5 +7,6 @@ package com.sarayrah.abdallah.jhrapp
 class Values {
     companion object {
         var page_name = ""
+        var deputy_name = ""
     }
 }
