@@ -141,6 +141,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.ahmed_safadi_ic_launcher_round)
                 })
             }
+            "khair_saileik_body" -> {
+                view.deputy_tv.setText(R.string.khair_saileik_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.khair_saileik_ic_launcher_round)
+                })
+            }
         }
 
         return view
