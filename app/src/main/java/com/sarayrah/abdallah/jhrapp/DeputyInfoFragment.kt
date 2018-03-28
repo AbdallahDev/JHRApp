@@ -99,6 +99,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.abdul_mehsiri_ic_launcher_round)
                 })
             }
+            "qais_ziadin_body" -> {
+                view.deputy_tv.setText(R.string.qais_ziadin_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.qais_ziadin_ic_launcher_round)
+                })
+            }
         }
 
         return view
