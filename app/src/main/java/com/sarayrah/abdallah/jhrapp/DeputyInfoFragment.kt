@@ -57,6 +57,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.mosa_hantash_ic_launcher_round)
                 })
             }
+            "abdullah_akayla_body" -> {
+                view.deputy_tv.setText(R.string.abdullah_akayla_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.abdullah_akayla_ic_launcher_round)
+                })
+            }
         }
 
         return view
