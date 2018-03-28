@@ -155,6 +155,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.ahmed_reqeb_ic_launcher_round)
                 })
             }
+            "ahmed_hamesat_body" -> {
+                view.deputy_tv.setText(R.string.ahmed_hamesat_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ahmed_hamesat_ic_launcher_round)
+                })
+            }
         }
 
         return view
