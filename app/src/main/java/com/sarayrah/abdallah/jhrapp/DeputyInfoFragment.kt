@@ -85,6 +85,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.omar_karakeash_ic_launcher_round)
                 })
             }
+            "aziz_obeidi_body" -> {
+                view.deputy_tv.setText(R.string.aziz_obeidi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.aziz_obeidi_ic_launcher_round)
+                })
+            }
         }
 
         return view
