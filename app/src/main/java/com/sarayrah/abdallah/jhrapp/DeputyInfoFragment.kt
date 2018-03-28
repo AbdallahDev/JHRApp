@@ -169,6 +169,20 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.ramadan_hunaiti_ic_launcher_round)
                 })
             }
+            "nassar_qaisi_body" -> {
+                view.deputy_tv.setText(R.string.nassar_qaisi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.nassar_qaisi_ic_launcher_round)
+                })
+            }
+            "fadil_abadi_body" -> {
+                view.deputy_tv.setText(R.string.fadil_abadi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.fadil_abadi_ic_launcher_round)
+                })
+            }
         }
 
         return view
