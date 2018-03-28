@@ -71,6 +71,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.yahya_saud_ic_launcher_round)
                 })
             }
+            "mosa_wahesh_body" -> {
+                view.deputy_tv.setText(R.string.mosa_wahesh_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mosa_wahesh_ic_launcher_round)
+                })
+            }
         }
 
         return view
