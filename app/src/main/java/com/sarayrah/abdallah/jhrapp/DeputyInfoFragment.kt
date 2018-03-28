@@ -127,6 +127,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.mansour_sjaja_ic_launcher_round)
                 })
             }
+            "khamis_atieh_body" -> {
+                view.deputy_tv.setText(R.string.khamis_atieh_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.khamis_atieh_ic_launcher_round)
+                })
+            }
         }
 
         return view
