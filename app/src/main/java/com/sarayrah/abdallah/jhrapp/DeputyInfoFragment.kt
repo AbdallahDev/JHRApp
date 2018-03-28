@@ -162,6 +162,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.ahmed_hamesat_ic_launcher_round)
                 })
             }
+            "ramadan_hunaiti_body" -> {
+                view.deputy_tv.setText(R.string.ramadan_hunaiti_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ramadan_hunaiti_ic_launcher_round)
+                })
+            }
         }
 
         return view
