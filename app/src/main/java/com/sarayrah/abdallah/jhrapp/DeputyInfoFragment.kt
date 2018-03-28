@@ -106,6 +106,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.qais_ziadin_ic_launcher_round)
                 })
             }
+            "khaled_awad_body" -> {
+                view.deputy_tv.setText(R.string.khaled_awad_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.khaled_awad_ic_launcher_round)
+                })
+            }
         }
 
         return view
