@@ -246,6 +246,62 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.mahmoud_titi_ic_launcher_round)
                 })
             }
+            "ibrahim_hani_body" -> {
+                view.deputy_tv.setText(R.string.ibrahim_hani_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ibrahim_hani_ic_launcher_round)
+                })
+            }
+            "nidal_taani_body" -> {
+                view.deputy_tv.setText(R.string.nidal_taani_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.nidal_taani_ic_launcher_round)
+                })
+            }
+            "joudat_darabsa_body" -> {
+                view.deputy_tv.setText(R.string.joudat_darabsa_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.joudat_darabsa_ic_launcher_round)
+                })
+            }
+            "khaled_hassan_body" -> {
+                view.deputy_tv.setText(R.string.khaled_hassan_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.khaled_hassan_ic_launcher_round)
+                })
+            }
+            "fawaz_zoubi_body" -> {
+                view.deputy_tv.setText(R.string.fawaz_zoubi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.fawaz_zoubi_ic_launcher_round)
+                })
+            }
+            "abdullah_obaidat_body" -> {
+                view.deputy_tv.setText(R.string.abdullah_obaidat_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.abdullah_obaidat_ic_launcher_round)
+                })
+            }
+            "wael_razouk_body" -> {
+                view.deputy_tv.setText(R.string.wael_razouk_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.wael_razouk_ic_launcher_round)
+                })
+            }
+            "hosny_shyab_body" -> {
+                view.deputy_tv.setText(R.string.hosny_shyab_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.hosny_shyab_ic_launcher_round)
+                })
+            }
         }
 
         return view

@@ -244,6 +244,62 @@ class DeputiesFragment : Fragment() {
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
+        view.ibrahim_hani.setOnClickListener {
+            Values.deputy_name = "ibrahim_hani_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.nidal_taani.setOnClickListener {
+            Values.deputy_name = "nidal_taani_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.joudat_darabsa.setOnClickListener {
+            Values.deputy_name = "joudat_darabsa_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.khaled_hassan.setOnClickListener {
+            Values.deputy_name = "khaled_hassan_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.fawaz_zoubi.setOnClickListener {
+            Values.deputy_name = "fawaz_zoubi_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.abdullah_obaidat.setOnClickListener {
+            Values.deputy_name = "abdullah_obaidat_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.wael_razouk.setOnClickListener {
+            Values.deputy_name = "wael_razouk_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.hosny_shyab.setOnClickListener {
+            Values.deputy_name = "hosny_shyab_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
 
         return view
     }
