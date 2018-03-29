@@ -190,6 +190,34 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.ahmed_lozi_ic_launcher_round)
                 })
             }
+            "tamer_pino_body" -> {
+                view.deputy_tv.setText(R.string.tamer_pino_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.tamer_pino_ic_launcher_round)
+                })
+            }
+            "mostafa_assaf_body" -> {
+                view.deputy_tv.setText(R.string.mostafa_assaf_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mostafa_assaf_ic_launcher_round)
+                })
+            }
+            "hasan_ajarma_body" -> {
+                view.deputy_tv.setText(R.string.hasan_ajarma_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.hasan_ajarma_ic_launcher_round)
+                })
+            }
+            "barakat_abadi_body" -> {
+                view.deputy_tv.setText(R.string.barakat_abadi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.barakat_abadi_ic_launcher_round)
+                })
+            }
         }
 
         return view

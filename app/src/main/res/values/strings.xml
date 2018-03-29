@@ -839,5 +839,13 @@
 \n\t\t*\t 3 سنوات سفير في الخارجية
 \n\t\t*\t عضو مجلس في الجامعة الاردنية لمدة 3 سنوات
 \n\t\t*\t موجة في كلية الاركان و كلية الدفاع</string>
+    <string name="tamer_pino_title">النائب تامر شاهر سيد محمد بينو</string>
+    <string name="tamer_pino_body">النائب تامر شاهر سيد محمد بينو</string>
+    <string name="mostafa_assaf_title">النائب مصطفى عبدالرحمن مازن العساف</string>
+    <string name="mostafa_assaf_body">النائب مصطفى عبدالرحمن مازن العساف</string>
+    <string name="hasan_ajarma_title">النائب حسن مفلح عودة الله العجارمة</string>
+    <string name="hasan_ajarma_body">النائب حسن مفلح عودة الله العجارمة</string>
+    <string name="barakat_abadi_title">النائب بركات كامل عبدالكريم النمر المهيرات العبادي</string>
+    <string name="barakat_abadi_body">النائب بركات كامل عبدالكريم النمر المهيرات العبادي</string>
 
 </resources>
