@@ -330,6 +330,34 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.hamed_saqour_ic_launcher_round)
                 })
             }
+            "majed_qweism_body" -> {
+                view.deputy_tv.setText(R.string.majed_qweism_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.majed_qweism_ic_launcher_round)
+                })
+            }
+            "khaled_bashtawi_body" -> {
+                view.deputy_tv.setText(R.string.khaled_bashtawi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.khaled_bashtawi_ic_launcher_round)
+                })
+            }
+            "ibrahim_quran_body" -> {
+                view.deputy_tv.setText(R.string.ibrahim_quran_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ibrahim_quran_ic_launcher_round)
+                })
+            }
+            "moataz_rumman_body" -> {
+                view.deputy_tv.setText(R.string.moataz_rumman_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.moataz_rumman_ic_launcher_round)
+                })
+            }
         }
 
         return view
