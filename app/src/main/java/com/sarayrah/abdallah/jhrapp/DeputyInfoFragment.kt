@@ -183,6 +183,13 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.fadil_abadi_ic_launcher_round)
                 })
             }
+            "ahmed_lozi_body" -> {
+                view.deputy_tv.setText(R.string.ahmed_lozi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ahmed_lozi_ic_launcher_round)
+                })
+            }
         }
 
         return view
