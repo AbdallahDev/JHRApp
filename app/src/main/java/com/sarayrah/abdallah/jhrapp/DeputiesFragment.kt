@@ -216,6 +216,34 @@ class DeputiesFragment : Fragment() {
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
+        view.riad_azzam.setOnClickListener {
+            Values.deputy_name = "riad_azzam_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.rashed_shouha.setOnClickListener {
+            Values.deputy_name = "rashed_shouha_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.abdulmoneim_oudat.setOnClickListener {
+            Values.deputy_name = "abdulmoneim_oudat_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
+        view.mahmoud_titi.setOnClickListener {
+            Values.deputy_name = "mahmoud_titi_body"
+            val tr = fragmentManager?.beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)
+            tr?.commit()
+        }
 
         return view
     }
