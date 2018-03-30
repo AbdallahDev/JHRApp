@@ -498,6 +498,7 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.abdullah_qaramsah_ic_launcher_round)
                 })
             }
+
             "mohamed_falahat_body" -> {
                 view.deputy_tv.setText(R.string.mohamed_falahat_body)
                 view.deputy_image.setImageDrawable(this.context?.let {
@@ -524,6 +525,35 @@ class DeputyInfoFragment : Fragment() {
                 view.deputy_image.setImageDrawable(this.context?.let {
                     ContextCompat.getDrawable(it,
                             R.mipmap.tariq_khorey_ic_launcher_round)
+                })
+            }
+
+            "mohammad_thahraoy_body" -> {
+                view.deputy_tv.setText(R.string.mohammad_thahraoy_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mohammad_thahraoy_ic_launcher_round)
+                })
+            }
+            "mohammad_nooh_body" -> {
+                view.deputy_tv.setText(R.string.mohammad_nooh_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mohammad_nooh_ic_launcher_round)
+                })
+            }
+            "saoud_mahfooth_body" -> {
+                view.deputy_tv.setText(R.string.saoud_mahfooth_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.saoud_mahfooth_ic_launcher_round)
+                })
+            }
+            "nabeel_sheshaney_body" -> {
+                view.deputy_tv.setText(R.string.nabeel_sheshaney_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.nabeel_sheshaney_ic_launcher_round)
                 })
             }
         }
