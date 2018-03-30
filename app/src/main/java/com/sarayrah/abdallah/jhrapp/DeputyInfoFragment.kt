@@ -358,6 +358,62 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.moataz_rumman_ic_launcher_round)
                 })
             }
+            "jamal_gammoh_body" -> {
+                view.deputy_tv.setText(R.string.jamal_gammoh_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.jamal_gammoh_ic_launcher_round)
+                })
+            }
+            "mohammed_zoubi_body" -> {
+                view.deputy_tv.setText(R.string.mohammed_zoubi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mohammed_zoubi_ic_launcher_round)
+                })
+            }
+            "dawzy_dawood_body" -> {
+                view.deputy_tv.setText(R.string.dawzy_dawood_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.dawzy_dawood_ic_launcher_round)
+                })
+            }
+            "ali_hajjaja_body" -> {
+                view.deputy_tv.setText(R.string.ali_hajjaja_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ali_hajjaja_ic_launcher_round)
+                })
+            }
+            "mustafa_yaghi_body" -> {
+                view.deputy_tv.setText(R.string.mustafa_yaghi_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mustafa_yaghi_ic_launcher_round)
+                })
+            }
+            "ibrahim_sayed_body" -> {
+                view.deputy_tv.setText(R.string.ibrahim_sayed_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ibrahim_sayed_ic_launcher_round)
+                })
+            }
+            "khaled_hayari_body" -> {
+                view.deputy_tv.setText(R.string.khaled_hayari_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.khaled_hayari_ic_launcher_round)
+                })
+            }
+            "fadeyh_dayat_body" -> {
+                view.deputy_tv.setText(R.string.fadeyh_dayat_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.fadeyh_dayat_ic_launcher_round)
+                })
+            }
         }
 
         return view
