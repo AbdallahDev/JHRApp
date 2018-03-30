@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="108" />
+                                                <entry key="scalingPercent" value="114" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -37,9 +37,9 @@
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
                                       <entry key="backgroundLayerName" value="mahmoud_naimat_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\mahmoud_naimat.png" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\abdullah_qaramsah.jpg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="mahmoud_naimat_ic_launcher" />
+                                      <entry key="outputName" value="abdullah_qaramsah_ic_launcher" />
                                       <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
