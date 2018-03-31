@@ -36,10 +36,10 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="mohammad_hdeeb_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\mohammad_hdeeb.jpg" />
+                                      <entry key="backgroundLayerName" value="kamal_zgool_launcher_background" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\kamal_zgool.jpg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="mohammad_hdeeb_ic_launcher" />
+                                      <entry key="outputName" value="kamal_zgool_ic_launcher" />
                                       <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>

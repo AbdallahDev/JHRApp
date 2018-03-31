@@ -700,6 +700,36 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.mohammad_hdeeb_ic_launcher_round)
                 })
             }
+
+
+            "huda_otoom_body" -> {
+                view.deputy_tv.setText(R.string.huda_otoom_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.huda_otoom_ic_launcher_round)
+                })
+            }
+            "oqlah_zboon_body" -> {
+                view.deputy_tv.setText(R.string.oqlah_zboon_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.oqlah_zboon_ic_launcher_round)
+                })
+            }
+            "mohammad_ayasrah_body" -> {
+                view.deputy_tv.setText(R.string.mohammad_ayasrah_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mohammad_ayasrah_ic_launcher_round)
+                })
+            }
+            "kamal_zgool_body" -> {
+                view.deputy_tv.setText(R.string.kamal_zgool_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.kamal_zgool_ic_launcher_round)
+                })
+            }
         }
 
         return view
