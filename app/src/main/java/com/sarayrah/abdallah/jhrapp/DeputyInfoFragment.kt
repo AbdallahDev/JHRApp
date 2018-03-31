@@ -868,11 +868,11 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.manal_dmoor_ic_launcher_round)
                 })
             }
-            "ibstisam_nawafleh_body" -> {
-                view.deputy_tv.setText(R.string.ibstisam_nawafleh_body)
+            "ibtisam_nawafleh_body" -> {
+                view.deputy_tv.setText(R.string.ibtisam_nawafleh_body)
                 view.deputy_image.setImageDrawable(this.context?.let {
                     ContextCompat.getDrawable(it,
-                            R.mipmap.ibstisam_nawafleh_ic_launcher_round)
+                            R.mipmap.ibtisam_nawafleh_ic_launcher_round)
                 })
             }
         }

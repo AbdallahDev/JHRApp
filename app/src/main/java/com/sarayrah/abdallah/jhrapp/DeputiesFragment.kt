@@ -865,8 +865,8 @@ class DeputiesFragment : Fragment() {
             tr?.replace(R.id.fc, obj)
             tr?.commit()
         }
-        view.ibstisam_nawafleh.setOnClickListener {
-            Values.deputy_name = "ibstisam_nawafleh_body"
+        view.ibtisam_nawafleh.setOnClickListener {
+            Values.deputy_name = "ibtisam_nawafleh_body"
             val tr = fragmentManager?.beginTransaction()
             val obj = DeputyInfoFragment()
             tr?.replace(R.id.fc, obj)

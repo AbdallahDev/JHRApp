@@ -2409,7 +2409,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ibstisam_nawafleh"
+                android:id="@+id/ibtisam_nawafleh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -2418,13 +2418,13 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
-                    android:src="@mipmap/ibstisam_nawafleh_ic_launcher_round" />
+                    android:src="@mipmap/ibtisam_nawafleh_ic_launcher_round" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/ibstisam_nawafleh_title"
+                    android:text="@string/ibtisam_nawafleh_title"
                     android:textStyle="bold" />
             </LinearLayout>
 

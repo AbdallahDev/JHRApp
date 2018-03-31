@@ -36,10 +36,10 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="ibstisam_nawafleh_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\ibstisam_nawafleh.jpg" />
+                                      <entry key="backgroundLayerName" value="ibtisam_nawafleh_launcher_background" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\ibtisam_nawafleh.jpg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="ibstisam_nawafleh_ic_launcher" />
+                                      <entry key="outputName" value="ibtisam_nawafleh_ic_launcher" />
                                       <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
