@@ -1824,7 +1824,6 @@
 \t\t*\t ملعمة
     </string>
 
-
     <string name="hayat_masemy_title">النائب حياة حسين علي مسيمي</string>
     <string name="hayat_masemy_body"><b>اللقب</b>:\t	سعادة الدكتورة\n\n
 <b>الجنس</b>:\t	أنثى\n\n
@@ -1869,6 +1868,44 @@
 
     <b>الخبرات والوظائف السابقة</b>\n\n
 \t\t*\t مدير عام اقليمي لمؤسسة اكاديمية
+    </string>
+
+    <string name="wafaa_banimustafa_title">النائب وفاء سعيد يعقوب بني مصطفى</string>
+    <string name="wafaa_banimustafa_body"><b>اللقب</b>:\t	سعادة المحامية\n\n
+<b>الجنس</b>:\t	أنثى\n\n
+<b>الحالة الاجتماعية</b>:\t	متزوجة\n\n
+<b>تاريخ الميلاد</b>:\t	جمعة 16 مارس 1979\n\n\n
+
+    <b>الخبرات والوظائف السابقة</b>\n\n
+\t\t*\t عضو نقابة المحامين
+</string>
+    <string name="montaha_bool_title">النائب منتهى عبدالجواد احمد البعول</string>
+    <string name="montaha_bool_body"><b>اللقب</b>:\t	سعادة السيدة\n\n
+<b>الجنس</b>:\t	أنثى\n\n
+<b>الحالة الاجتماعية</b>:\t	متزوجة\n\n
+<b>تاريخ الميلاد</b>:\t	خميس 7 ديسمبر 1961\n\n\n
+    </string>
+    <string name="alia_abuhleyel_title">النائب عليا عودة نصار ابو هليل</string>
+    <string name="alia_abuhleyel_body"><b>اللقب</b>:\t	سعادة السيدة\n\n
+<b>الجنس</b>:\t	أنثى\n\n
+<b>الحالة الاجتماعية</b>:\t	متزوجة\n\n
+<b>تاريخ الميلاد</b>:\t	خميس 9 أكتوبر 1958\n\n\n
+
+    <b>الخبرات والوظائف السابقة</b>\n\n
+\t\t*\t معلمة في وزارة التربية والتعليم 1992 - 2007
+\n\t\t*\t مشرفة مرحلة للصفوف الثلاثة الاولى 2007 - 2016
+\n\t\t*\t مدرسة لمناطق جيوب الفقر في وادي عربة
+    </string>
+    <string name="zaineb_zbeed_title">النائب زينب حمود سالم الزبيد</string>
+    <string name="zaineb_zbeed_body"><b>اللقب</b>:\t	سعادة الآنسة\n\n
+<b>الجنس</b>:\t	أنثى\n\n
+<b>الحالة الاجتماعية</b>:\t	عزباء\n\n
+<b>تاريخ الميلاد</b>:\t	سبت 20 سبتمبر 1986\n\n\n
+
+    <b>الخبرات والوظائف السابقة</b>\n\n
+\t\t*\t مدير لدى UNHCR
+\n\t\t*\t موظف UNDOP
+\n\t\t*\t موظف Acred
     </string>
 
 </resources>
