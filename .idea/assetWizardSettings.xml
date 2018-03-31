@@ -36,10 +36,10 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="zaineb_zbeed_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\zaineb_zbeed.jpg" />
+                                      <entry key="backgroundLayerName" value="shahaa_amareen_launcher_background" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\shahaa_amareen.jpg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="zaineb_zbeed_ic_launcher" />
+                                      <entry key="outputName" value="shahaa_amareen_ic_launcher" />
                                       <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>

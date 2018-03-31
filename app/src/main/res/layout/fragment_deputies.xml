@@ -2570,7 +2570,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-
             <LinearLayout
                 android:id="@+id/zaineb_zbeed"
                 android:layout_width="match_parent"
@@ -2588,6 +2587,47 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/zaineb_zbeed_title"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rasmiah_kaabneh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/rasmiah_kaabneh_ic_launcher_round" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/rasmiah_kaabneh_title"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shahaa_amareen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/shahaa_amareen_ic_launcher_round" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/shahaa_amareen_title"
                     android:textStyle="bold" />
             </LinearLayout>
 

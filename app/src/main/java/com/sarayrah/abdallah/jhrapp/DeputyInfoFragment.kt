@@ -933,6 +933,21 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.zaineb_zbeed_ic_launcher_round)
                 })
             }
+
+            "rasmiah_kaabneh_body" -> {
+                view.deputy_tv.setText(R.string.rasmiah_kaabneh_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.rasmiah_kaabneh_ic_launcher_round)
+                })
+            }
+            "shahaa_amareen_body" -> {
+                view.deputy_tv.setText(R.string.shahaa_amareen_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.shahaa_amareen_ic_launcher_round)
+                })
+            }
         }
 
         return view
