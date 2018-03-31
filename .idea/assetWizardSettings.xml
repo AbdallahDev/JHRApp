@@ -36,10 +36,10 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="qosai_dmesey_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\qosai_dmesey.jpg" />
+                                      <entry key="backgroundLayerName" value="abdkareem_dogmy_launcher_background" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\abdkareem_dogmy.jpg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="qosai_dmesey_ic_launcher" />
+                                      <entry key="outputName" value="abdkareem_dogmy_ic_launcher" />
                                       <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
