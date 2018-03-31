@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="108" />
+                                                <entry key="scalingPercent" value="111" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -36,10 +36,10 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="abdqader_azaydah_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\abdqader_azaydah.jpg" />
+                                      <entry key="backgroundLayerName" value="mohammad_hdeeb_launcher_background" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\mohammad_hdeeb.jpg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="abdqader_azaydah_ic_launcher" />
+                                      <entry key="outputName" value="mohammad_hdeeb_ic_launcher" />
                                       <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>

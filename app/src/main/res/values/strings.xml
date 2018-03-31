@@ -1525,15 +1525,44 @@
 <b>الجنس</b>:\t	ذكر\n\n
 <b>الحالة الاجتماعية</b>:\t	متزوج\n\n
 <b>تاريخ الميلاد</b>:\t	سبت 5 سبتمبر 1970\n\n\n
-
-    <b>الخبرات والوظائف السابقة</b>\n\n
-\t\t*\t ممارسة مهنة المحاماة منذ عام 1995 الى الآن
     </string>
     <string name="abdqader_azaydah_title">النائب عبدالقادر سلمان نوري الفشيكات الازايدة</string>
     <string name="abdqader_azaydah_body"><b>اللقب</b>:\t	سعادة السيد\n\n
 <b>الجنس</b>:\t	ذكر \n\n
 <b>الحالة الاجتماعية</b>:\t	متزوج \n\n
 <b>تاريخ الميلاد</b>:\t	أحد 15 يناير 1961\n\n\n
+    </string>
+
+    <string name="nabeel_geshan_title">النائب نبيل ميخائيل عودة الغيشان</string>
+    <string name="nabeel_geshan_body"><b>اللقب</b>:\t	سعادة السيد\n\n
+<b>الجنس</b>:\t	ذكر \n\n
+<b>الحالة الاجتماعية</b>:\t	متزوج \n\n
+<b>تاريخ الميلاد</b>:\t	سبت 28 ديسمبر 1957\n\n\n
+
+    <b>الخبرات والوظائف السابقة</b>\n\n
+\t\t*\t صحفي / رئيس تحرير جريدة العرب اليوم
+</string>
+    <string name="adnaan_rkeebat_title">النائب عدنان سعيد محمد الركيبات</string>
+    <string name="adnaan_rkeebat_body"><b>اللقب</b>:\t	سعادة السيد\n\n
+<b>الجنس</b>:\t	ذكر\n\n
+<b>الحالة الاجتماعية</b>:\t	متزوج\n\n
+<b>تاريخ الميلاد</b>:\t	سبت 15 مارس 1975\n\n\n
+    </string>
+    <string name="zeed_shawabkah_title">النائب زيد محمد فلاح الشوابكة</string>
+    <string name="zeed_shawabkah_body"><b>اللقب</b>:\t	سعادة المحامي\n\n
+<b>الجنس</b>:\t	ذكر\n\n
+<b>الحالة الاجتماعية</b>:\t	متزوج\n\n\n
+
+    <b>الخبرات والوظائف السابقة</b>\n\n
+\t\t*\t محامي.
+\n\t\t*\t عضو مجلس بلدي مأدبا لدورتين متتاليتين.
+\n\t\t*\t رئيس اللجنة القانونية لمجلس بلدي مأدبا سابقاً.
+    </string>
+    <string name="mohammad_hdeeb_title">النائب محمد عبدالفتاح محمود هديب</string>
+    <string name="mohammad_hdeeb_body"><b>اللقب</b>:\t	سعادة السيد\n\n
+<b>الجنس</b>:\t	ذكر \n\n
+<b>الحالة الاجتماعية</b>:\t	متزوج \n\n
+<b>تاريخ الميلاد</b>:\t	أحد 1 سبتمبر 1968\n\n\n
     </string>
 
 </resources>
