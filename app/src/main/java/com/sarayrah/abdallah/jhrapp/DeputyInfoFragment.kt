@@ -749,7 +749,7 @@ class DeputyInfoFragment : Fragment() {
                 view.deputy_tv.setText(R.string.ahmad_freehat_body)
                 view.deputy_image.setImageDrawable(this.context?.let {
                     ContextCompat.getDrawable(it,
-                            R.mipmap.ahmed_hamesat_ic_launcher_round)
+                            R.mipmap.ahmad_freehat_ic_launcher_round)
                 })
             }
             "mohammad_reyatee_body" -> {
@@ -757,6 +757,35 @@ class DeputyInfoFragment : Fragment() {
                 view.deputy_image.setImageDrawable(this.context?.let {
                     ContextCompat.getDrawable(it,
                             R.mipmap.mohammad_reyatee_ic_launcher_round)
+                })
+            }
+
+            "hazem_majali_body" -> {
+                view.deputy_tv.setText(R.string.hazem_majali_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.hazem_majali_ic_launcher_round)
+                })
+            }
+            "ibraheem_abuez_body" -> {
+                view.deputy_tv.setText(R.string.ibraheem_abuez_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.ibraheem_abuez_ic_launcher_round)
+                })
+            }
+            "habes_shabeeb_body" -> {
+                view.deputy_tv.setText(R.string.habes_shabeeb_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.habes_shabeeb_ic_launcher_round)
+                })
+            }
+            "mazen_qadee_body" -> {
+                view.deputy_tv.setText(R.string.mazen_qadee_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mazen_qadee_ic_launcher_round)
                 })
             }
         }
