@@ -788,6 +788,35 @@ class DeputyInfoFragment : Fragment() {
                             R.mipmap.mazen_qadee_ic_launcher_round)
                 })
             }
+
+            "sawan_sharafat_body" -> {
+                view.deputy_tv.setText(R.string.sawan_sharafat_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.sawan_sharafat_ic_launcher_round)
+                })
+            }
+            "sleman_zeben_body" -> {
+                view.deputy_tv.setText(R.string.sleman_zeben_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.sleman_zeben_ic_launcher_round)
+                })
+            }
+            "mhasen_shraa_body" -> {
+                view.deputy_tv.setText(R.string.mhasen_shraa_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.mhasen_shraa_ic_launcher_round)
+                })
+            }
+            "habes_fayez_body" -> {
+                view.deputy_tv.setText(R.string.habes_fayez_body)
+                view.deputy_image.setImageDrawable(this.context?.let {
+                    ContextCompat.getDrawable(it,
+                            R.mipmap.habes_fayez_ic_launcher_round)
+                })
+            }
         }
 
         return view
