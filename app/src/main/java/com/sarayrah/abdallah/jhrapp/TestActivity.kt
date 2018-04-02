@@ -11,7 +11,7 @@ class TestActivity : AppCompatActivity() {
 
         val tr = supportFragmentManager.beginTransaction()
         val obj = TestFragment()
-        tr.replace(R.id.fc, obj)
+        tr.replace(R.id.fc_test, obj)
         tr.commit()
     }
 }

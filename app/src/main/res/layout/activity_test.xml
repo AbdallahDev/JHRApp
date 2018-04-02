@@ -7,7 +7,7 @@
     tools:context=".TestActivity">
 
     <RelativeLayout
-        android:id="@+id/fc"
+        android:id="@+id/fc_test"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"

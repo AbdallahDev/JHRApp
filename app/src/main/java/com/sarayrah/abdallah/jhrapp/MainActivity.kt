@@ -25,12 +25,10 @@ class MainActivity : AppCompatActivity() {
         nv.setOnNavigationItemSelectedListener { item ->
 
             if (item.itemId == R.id.about) {
-                val tr = supportFragmentManager.beginTransaction()
                 val obj = AboutFragment()
                 tr.replace(R.id.fc, obj)
                 tr.commit()
             } else if (item.itemId == R.id.deputies) {
-                val tr = supportFragmentManager.beginTransaction()
                 val obj = DeputiesFragment()
                 tr.replace(R.id.fc, obj)
                 tr.commit()
