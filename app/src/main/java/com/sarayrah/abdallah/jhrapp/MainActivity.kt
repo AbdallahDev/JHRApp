@@ -27,13 +27,11 @@ class MainActivity : AppCompatActivity() {
             if (item.itemId == R.id.about) {
                 val tr = supportFragmentManager.beginTransaction()
                 val obj = AboutFragment()
-                tr.replace(R.id.fc, obj)
-                tr.commit()
+                tr.replace(R.id.fc, obj)?.addToBackStack(AboutFragment().tag)?.commit()
             } else if (item.itemId == R.id.deputies) {
                 val tr = supportFragmentManager.beginTransaction()
                 val obj = DeputiesFragment()
-                tr.replace(R.id.fc, obj)
-                tr.commit()
+                tr.replace(R.id.fc, obj)?.addToBackStack(DeputyInfoFragment().tag)?.commit()
             }
 
             item.isChecked = true
@@ -44,11 +42,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-    }
+//    override fun onBackPressed() {
+//        super.onBackPressed()
+//
+//        val intent = Intent(this, MainActivity::class.java)
+//        startActivity(intent)
+//    }
 }
 
