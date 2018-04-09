@@ -22,7 +22,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"
         android:layout_marginRight="10dp"
-        android:text="سعادة النائب"
+        android:text="@string/deputy_name"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_deputy"
         app:layout_constraintEnd_toStartOf="@+id/imageView_deputy" />
 
