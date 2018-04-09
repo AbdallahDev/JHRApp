@@ -9,6 +9,10 @@ class Test2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test2)
 
-
+        val tr = supportFragmentManager.beginTransaction()
+        val obj = Test2Fragment()
+        tr.replace(R.id.linearLayout_fragmentContainer, obj)
+                .addToBackStack(Test2Fragment().tag)
+                .commit()
     }
 }
