@@ -1,11 +1,15 @@
 package com.sarayrah.abdallah.jhrapp
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.deputy_row.view.*
+import android.app.Activity
+import android.support.v7.app.AppCompatActivity
+
 
 class DeputiesAdapter(private var context: Context, private var list: ArrayList<DeputyModel>) :
         RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -20,8 +24,17 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
         return list.size
     }
 
+    @SuppressLint("CommitTransaction")
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as DeputyView).bind(list[position].name, list[position].image)
+
+        holder.itemView.imageView_deputy.setOnClickListener {
+            Values.deputy_name = "andre_hawari_body"
+            val tr = (context as AppCompatActivity).supportFragmentManager
+                    .beginTransaction()
+            val obj = DeputyInfoFragment()
+            tr?.replace(R.id.fc, obj)?.addToBackStack(DeputyInfoFragment().tag)?.commit()
+        }
     }
 
     class DeputyView(itemView: View) : RecyclerView.ViewHolder(itemView) {
