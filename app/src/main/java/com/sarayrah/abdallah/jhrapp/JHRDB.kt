@@ -6,16 +6,17 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
     override fun onCreate(p0: SQLiteDatabase?) {
-        p0?.execSQL("CREATE TABLE deputy ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(50), info TEXT )")
-        p0?.execSQL("insert into deputy(name, info) values(?,?)", arrayOf(
+        p0?.execSQL("CREATE TABLE deputy ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(50), info TEXT, image VARCHAR(100) )")
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
                 "اندريه مراد محمود عبدالجليل حواري",
                 "<p><strong>الاسم: </strong>اندريه مراد محمود عبدالجليل حواري</p>\n" +
                         "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
                         "<p><strong>الجنس: </strong>ذكر</p>\n" +
                         "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
-                        "<p><strong>تاريخ الميلاد</strong>: سبت 9 يناير 1982</p>"))
+                        "<p><strong>تاريخ الميلاد</strong>: سبت 9 يناير 1982</p>",
+                R.mipmap.andre_hawari_ic_launcher_round))
 
-        p0?.execSQL("insert into deputy(name, info) values(?,?)", arrayOf(
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
                 "خليل حسين خليل عطية",
                 "<p><strong>الاسم: </strong>خليل حسين خليل عطية</p>\n" +
                         "<p><strong>اللقب: </strong>سعادة المهندس</p>\n" +
@@ -27,9 +28,10 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                         "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
                         "<ul>\n" +
                         "<li>عمل في القطاع الخاص وإدارة الأعمال</li>\n" +
-                        "</ul>"))
+                        "</ul>",
+                R.mipmap.khaleel_atieh_ic_launcher_round))
 
-        p0?.execSQL("insert into deputy(name, info) values(?,?)", arrayOf(
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
                 "عبدالرحمن حسين محمد العوايشة",
                 "<p><strong>الاسم: </strong>عبدالرحمن حسين محمد العوايشة</p>\n" +
                         "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
@@ -43,9 +45,10 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                         "<li>ناشط في مجال حقوق الانسان</li>\n" +
                         "<li>ناشط في مجال العمل السياسي والبرلماني</li>\n" +
                         "<li>نائب نقيب اصحاب المخابز</li>\n" +
-                        "</ul>"))
+                        "</ul>",
+                R.mipmap.abdulrahman_owaisha_ic_launcher_round))
 
-        p0?.execSQL("insert into deputy(name, info) values(?,?)", arrayOf(
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
                 "محمد راشد عودة البرايسة",
                 "<p><strong>الاسم: </strong>محمد راشد عودة البرايسة</p>\n" +
                         "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
@@ -58,7 +61,8 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                         "<ul>\n" +
                         "<li>مسؤول العلاقات العامة و الاعلام في بنك تنمية المدن والقرى </li>\n" +
                         "<li>مسؤول العلاقات العامة و الاعلام في وزارة العمل</li>\n" +
-                        "</ul>"))
+                        "</ul>",
+                R.mipmap.mohamed_baraisa_ic_launcher_round))
 
     }
 
