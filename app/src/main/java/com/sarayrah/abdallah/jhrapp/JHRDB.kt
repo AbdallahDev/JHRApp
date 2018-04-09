@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
     override fun onCreate(p0: SQLiteDatabase?) {
-        p0?.execSQL("CREATE TABLE deputy ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(50), info TEXT, image VARCHAR(100) )")
-        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+        p0?.execSQL("CREATE TABLE deputy ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(50), info TEXT, image INTEGER )")
+        val execSQL = p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
                 "اندريه مراد محمود عبدالجليل حواري",
                 "<p><strong>الاسم: </strong>اندريه مراد محمود عبدالجليل حواري</p>\n" +
                         "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
