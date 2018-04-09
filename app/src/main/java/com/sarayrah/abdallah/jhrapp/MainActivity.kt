@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
                 tr.replace(R.id.fc, obj)?.addToBackStack(AboutFragment().tag)?.commit()
             } else if (item.itemId == R.id.deputies) {
                 val tr = supportFragmentManager.beginTransaction()
-                val obj = DeputiesFragment()
-                tr.replace(R.id.fc, obj)?.addToBackStack(DeputyInfoFragment().tag)?.commit()
+                val obj = DeputiesDBFragment()
+                tr.replace(R.id.fc, obj)?.addToBackStack(DeputiesDBFragment().tag)?.commit()
             }
 
             item.isChecked = true
