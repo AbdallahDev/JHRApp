@@ -29,7 +29,7 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
         (holder as DeputyView).bind(list[position].name, list[position].image)
 
         holder.itemView.imageView_deputy.setOnClickListener {
-            Values.deputy_name = "andre_hawari_body"
+            Values.deputy_name = list[position].name
             val tr = (context as AppCompatActivity).supportFragmentManager
                     .beginTransaction()
             val obj = DeputyInfoFragment()

@@ -15,7 +15,6 @@ import kotlinx.android.synthetic.main.fragment_deputy_info.view.*
  */
 class DeputyInfoFragment : Fragment() {
 
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
