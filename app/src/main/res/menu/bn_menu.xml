@@ -10,4 +10,9 @@
         android:icon="@drawable/deputies_action_name"
         android:title="@string/deputies_menu_item" />
 
+    <item
+        android:id="@+id/committees"
+        android:icon="@drawable/committee_action_name"
+        android:title="@string/deputies_menu_item" />
+
 </menu>

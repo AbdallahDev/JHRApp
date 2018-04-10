@@ -6,6 +6,7 @@
     <string name="title">مجلس النواب الاردني</string>
     <string name="about_menu_item">عن المجلس</string>
     <string name="deputies_menu_item">الاعضاء</string>
+    <string name="committees_menu_item">اللجان</string>
     <string name="JHRAppLogo">شعار مجلس النواب</string>
 
     //this in the deputy_row.xml file

@@ -24,14 +24,22 @@ class MainActivity : AppCompatActivity() {
 
         nv.setOnNavigationItemSelectedListener { item ->
 
-            if (item.itemId == R.id.about) {
-                val tr = supportFragmentManager.beginTransaction()
-                val obj = AboutFragment()
-                tr.replace(R.id.fc, obj)?.addToBackStack(AboutFragment().tag)?.commit()
-            } else if (item.itemId == R.id.deputies) {
-                val tr = supportFragmentManager.beginTransaction()
-                val obj = DeputiesDBFragment()
-                tr.replace(R.id.fc, obj)?.addToBackStack(DeputiesDBFragment().tag)?.commit()
+            when {
+                item.itemId == R.id.about -> {
+                    val tr = supportFragmentManager.beginTransaction()
+                    val obj = AboutFragment()
+                    tr.replace(R.id.fc, obj)?.addToBackStack(AboutFragment().tag)?.commit()
+                }
+                item.itemId == R.id.deputies -> {
+                    val tr = supportFragmentManager.beginTransaction()
+                    val obj = DeputiesDBFragment()
+                    tr.replace(R.id.fc, obj)?.addToBackStack(DeputiesDBFragment().tag)?.commit()
+                }
+                item.itemId == R.id.committees -> {
+                    val tr = supportFragmentManager.beginTransaction()
+                    val obj = CommitteesFragment()
+                    tr.replace(R.id.fc, obj)?.addToBackStack(CommitteesFragment().tag)?.commit()
+                }
             }
 
             item.isChecked = true

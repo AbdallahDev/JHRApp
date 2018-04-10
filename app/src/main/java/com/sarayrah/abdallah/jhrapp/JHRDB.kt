@@ -222,6 +222,22 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                         "</ul>",
                 R.mipmap.saleh_armouti_ic_launcher_round))
 
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "منصور سيف الدين مراد سجاجه",
+                "<p><strong>الاسم: </strong>صالح عبدالكريم شحادة العرموطي</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أحد 1 يناير 1950<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>نقيب المحاماة لمدة 4 دورات</li>\n" +
+                        "<li>مزاول مهنة المحاماة</li>\n" +
+                        "</ul>",
+                R.mipmap.saleh_armouti_ic_launcher_round))
+
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
