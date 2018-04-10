@@ -6,8 +6,9 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
     override fun onCreate(p0: SQLiteDatabase?) {
+        //bellow is the deputy table creation and insertion
         p0?.execSQL("CREATE TABLE deputy ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(50), info TEXT, image INTEGER )")
-        val execSQL = p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
                 "اندريه مراد محمود عبدالجليل حواري",
                 "<p><strong>الاسم: </strong>اندريه مراد محمود عبدالجليل حواري</p>\n" +
                         "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
@@ -263,6 +264,22 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                         "<li>عضو في العديد من المؤسسات الإنسانية والاجتماعية والجمعيات الخيرية.</li>\n" +
                         "</ul>",
                 R.mipmap.khamis_atieh_ic_launcher_round))
+
+
+        //bellow is the committee table creation and insertion
+        p0?.execSQL("CREATE TABLE committee ( committee_id INTEGER PRIMARY KEY AUTOINCREMENT, committee_name VARCHAR(50))")
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "اللجنة القانونية"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "اللجنة المالية"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الاقتصاد والاستثمار"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الشؤون الخارجية"))
 
     }
 
