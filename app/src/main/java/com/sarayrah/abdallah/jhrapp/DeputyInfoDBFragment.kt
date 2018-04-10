@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_deputy_info_db.view.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -24,6 +25,9 @@ class DeputyInfoDBFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_deputy_info_db, container,
                 false)
+
+        view.imageView_deputyImage.setImageResource(Values.deputy_image)
+        view.textView_deputyInfo.text = Values.deputy_info
 
         return view
     }
