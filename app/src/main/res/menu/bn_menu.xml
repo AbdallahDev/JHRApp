@@ -13,6 +13,6 @@
     <item
         android:id="@+id/committees"
         android:icon="@drawable/committee_action_name"
-        android:title="@string/deputies_menu_item" />
+        android:title="@string/committees_menu_item" />
 
 </menu>
