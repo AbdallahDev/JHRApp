@@ -37,6 +37,7 @@ class DeputiesDBFragment : Fragment() {
         cursor.moveToFirst()
         while (!cursor.isAfterLast) {
             deputiesList.add(DeputyModel(cursor.getString(cursor.getColumnIndex("name")),
+                    cursor.getString(cursor.getColumnIndex("info")),
                     cursor.getInt(cursor.getColumnIndex("image"))))
             cursor.moveToNext()
         }
