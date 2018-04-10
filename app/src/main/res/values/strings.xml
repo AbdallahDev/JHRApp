@@ -9,7 +9,7 @@
     <string name="JHRAppLogo">شعار مجلس النواب</string>
 
     //this in the deputy_row.xml file
-    <string name="deputy_name">سعادة النائب</string>
+    <string name="deputy_name">النائب</string>
     <string name="deputy_image">صورة النائب</string>
 
     //those values are for the about pages titles and bodies
