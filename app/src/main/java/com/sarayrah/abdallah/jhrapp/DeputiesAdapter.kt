@@ -35,8 +35,8 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
 
             val tr = (context as AppCompatActivity).supportFragmentManager
                     .beginTransaction()
-            val obj = DeputyInfoFragment()
-            tr?.replace(R.id.fc, obj)?.addToBackStack(DeputyInfoFragment().tag)?.commit()
+            val obj = DeputyInfoDBFragment()
+            tr?.replace(R.id.fc, obj)?.addToBackStack(DeputyInfoDBFragment().tag)?.commit()
         }
     }
 

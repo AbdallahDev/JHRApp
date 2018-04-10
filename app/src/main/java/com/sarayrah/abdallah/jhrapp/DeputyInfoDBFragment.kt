@@ -22,7 +22,10 @@ class DeputyInfoDBFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_deputy_info_db, container, false)
+        val view = inflater.inflate(R.layout.fragment_deputy_info_db, container,
+                false)
+
+        return view
     }
 
 
