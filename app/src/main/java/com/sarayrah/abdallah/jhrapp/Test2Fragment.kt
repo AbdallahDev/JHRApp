@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,22 +29,7 @@ class Test2Fragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_test2, container, false)
 
-        val deputiesList = ArrayList<DeputyModel>()
-
-        val obj = JHRDB(this.activity!!)
-        val db = obj.readableDatabase
-        val cursor = db.rawQuery("select name, info, image from deputy", arrayOf())
-        cursor.moveToFirst()
-        while (!cursor.isAfterLast) {
-            deputiesList.add(DeputyModel(cursor.getString(cursor.getColumnIndex("name")),
-                    cursor.getString(cursor.getColumnIndex("info")),
-                    cursor.getInt(cursor.getColumnIndex("image"))))
-            cursor.moveToNext()
-        }
-
-        val adapter = DeputiesAdapter(this.activity!!, deputiesList)
-        view.deputies_recyclerView.layoutManager = LinearLayoutManager(this.activity!!)
-        view.deputies_recyclerView.adapter = adapter
+        view.textView2.text = Html.fromHtml(Values.deputy_info)
 
         return view
     }
