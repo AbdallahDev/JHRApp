@@ -141,6 +141,87 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                         "<p><strong>تاريخ الميلاد</strong>: ثلاثاء 18 نوفمبر 1952 <p>\n",
                 R.mipmap.mosa_wahesh_ic_launcher_round))
 
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "عمر صبحي شحادة قراقيش",
+                "<p><strong>الاسم: </strong>عمر صبحي شحادة قراقيش</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: سبت 1 يوليو 1967<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>دير مالي و اداري.</li>\n" +
+                        "<li>مدير مكتب محاسبة و دراسات جدوى - خبراء ضرائب.</li>\n" +
+                        "</ul>",
+                R.mipmap.omar_karakeash_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "عزيز محمد علي سلمان العبيدي",
+                "<p><strong>الاسم: </strong>عزيز محمد علي سلمان العبيدي</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: خميس 25 مايو 1961<p>\n",
+                R.mipmap.aziz_obeidi_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "عبد علي محمد عليان المحسيري",
+                "<p><strong>الاسم: </strong>عبد علي محمد عليان المحسيري</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: سبت 6 نوفمبر 1971<p>\n",
+                R.mipmap.abdul_mehsiri_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "قيس خليل يعقوب زيادين",
+                "<p><strong>الاسم: </strong>قيس خليل يعقوب زيادين</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: جمعة 6 أبريل 1984<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>محامي مزاول.</li>\n" +
+                        "</ul>",
+                R.mipmap.qais_ziadin_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "خالد رمضان محمد عواد",
+                "<p><strong>الاسم: </strong>خالد رمضان محمد عواد</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المهندس</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: أعزب</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: ثلاثاء 21 أغسطس 1956<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>عضو نقابة المهندسين الاردنيين.</li>\n" +
+                        "<li>عضو نقابة المقاولين.</li>\n" +
+                        "</ul>",
+                R.mipmap.khaled_awad_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "صالح عبدالكريم شحادة العرموطي",
+                "<p><strong>الاسم: </strong>صالح عبدالكريم شحادة العرموطي</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أحد 1 يناير 1950<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>نقيب المحاماة لمدة 4 دورات</li>\n" +
+                        "<li>مزاول مهنة المحاماة</li>\n" +
+                        "</ul>",
+                R.mipmap.saleh_armouti_ic_launcher_round))
+
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
