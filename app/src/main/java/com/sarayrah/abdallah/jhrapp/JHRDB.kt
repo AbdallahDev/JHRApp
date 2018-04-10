@@ -132,6 +132,15 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                         "</ul>",
                 R.mipmap.yahya_saud_ic_launcher_round))
 
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "موسى علي محمد الوحش",
+                "<p><strong>الاسم: </strong>موسى علي محمد الوحش</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة الدكتور</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: ثلاثاء 18 نوفمبر 1952 <p>\n",
+                R.mipmap.mosa_wahesh_ic_launcher_round))
+
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
