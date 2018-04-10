@@ -32,10 +32,11 @@ class Test2Fragment : Fragment() {
 
         val obj = JHRDB(this.activity!!)
         val db = obj.readableDatabase
-        val cursor = db.rawQuery("select name, image from deputy", arrayOf())
+        val cursor = db.rawQuery("select name, info, image from deputy", arrayOf())
         cursor.moveToFirst()
         while (!cursor.isAfterLast) {
             deputiesList.add(DeputyModel(cursor.getString(cursor.getColumnIndex("name")),
+                    cursor.getString(cursor.getColumnIndex("info")),
                     cursor.getInt(cursor.getColumnIndex("image"))))
             cursor.moveToNext()
         }
