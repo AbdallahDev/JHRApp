@@ -28,9 +28,11 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
         (holder as DeputyView).bind(list[position].name, list[position].image)
 
         holder.itemView.imageView_deputy.setOnClickListener {
-            Values.deputy_name = list[position].name
+            //bellow i store the values from the list in the static variables to be used later
+            //in the other pages, like the deputyInfoDBFragment page
             Values.deputy_info = list[position].info
             Values.deputy_image = list[position].image
+
             val tr = (context as AppCompatActivity).supportFragmentManager
                     .beginTransaction()
             val obj = DeputyInfoFragment()
