@@ -25,7 +25,7 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
 
     @SuppressLint("CommitTransaction")
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        (holder as DeputyView).bind(list[position].name, list[position].image)
+        (holder as DeputyView).bind(list[position].name, list[position].info, list[position].image)
 
         holder.itemView.imageView_deputyImage.setOnClickListener {
             //bellow i store the values from the list in the static variables to be used later
@@ -42,7 +42,7 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
 
     class DeputyView(itemView: View) : RecyclerView.ViewHolder(itemView) {
         @SuppressLint("SetTextI18n")
-        fun bind(nm: String, img: Int) {
+        fun bind(nm: String, inf: String, img: Int) {
             itemView.imageView_deputyImage.setImageResource(img)
             itemView.textView_deputyName.text = "النائب $nm"
         }
