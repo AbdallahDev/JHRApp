@@ -29,6 +29,8 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
 
         holder.itemView.imageView_deputy.setOnClickListener {
             Values.deputy_name = list[position].name
+            Values.deputy_info = list[position].info
+            Values.deputy_image = list[position].image
             val tr = (context as AppCompatActivity).supportFragmentManager
                     .beginTransaction()
             val obj = DeputyInfoFragment()
