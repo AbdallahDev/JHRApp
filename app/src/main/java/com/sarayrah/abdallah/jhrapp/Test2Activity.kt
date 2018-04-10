@@ -2,6 +2,8 @@ package com.sarayrah.abdallah.jhrapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_test2.*
 
 class Test2Activity : AppCompatActivity() {
 
@@ -13,5 +15,7 @@ class Test2Activity : AppCompatActivity() {
         val db = obj.readableDatabase
         val cursor = db.rawQuery("select name, info, image from deputy", arrayOf())
         cursor.moveToFirst()
+
+        textView.text = cursor.getString(cursor.getColumnIndex("info"))
     }
 }
