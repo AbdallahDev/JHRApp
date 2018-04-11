@@ -6,10 +6,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.sarayrah.abdallah.jhrapp.DeputyInfoDBFragment
-import com.sarayrah.abdallah.jhrapp.R
-import com.sarayrah.abdallah.jhrapp.TestFragment
-import com.sarayrah.abdallah.jhrapp.Values
+import com.sarayrah.abdallah.jhrapp.*
 import com.sarayrah.abdallah.jhrapp.models.CommitteeModel
 import kotlinx.android.synthetic.main.committee_row.view.*
 
@@ -36,8 +33,8 @@ class CommitteesAdapter(val context: Context, private val list: ArrayList<Commit
 
             val tr = (context as AppCompatActivity).supportFragmentManager
                     .beginTransaction()
-            val obj = TestFragment()
-            tr?.replace(R.id.fc, obj)?.addToBackStack(DeputyInfoDBFragment().tag)?.commit()
+            val obj = CommitteeInfoFragment()
+            tr?.replace(R.id.fc, obj)?.addToBackStack(CommitteeInfoFragment().tag)?.commit()
         }
     }
 
