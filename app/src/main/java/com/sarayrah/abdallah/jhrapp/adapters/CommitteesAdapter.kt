@@ -24,6 +24,10 @@ class CommitteesAdapter(val context: Context, private val list: ArrayList<Commit
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as CommitteeView).bind(list[position].committeeName)
+
+        holder.itemView.committee_row.setOnClickListener {
+
+        }
     }
 
     class CommitteeView(itemView: View) : RecyclerView.ViewHolder(itemView) {

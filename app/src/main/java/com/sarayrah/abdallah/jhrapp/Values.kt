@@ -12,5 +12,8 @@ class Values {
         var deputy_name = ""
         var deputy_info = ""
         var deputy_image = 0
+
+        //this variable used to define the selected committee to view it's deputies
+        var committee_id = 0
     }
 }

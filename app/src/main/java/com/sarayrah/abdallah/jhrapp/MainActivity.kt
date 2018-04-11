@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         tr.commit()
 
         nv.setOnNavigationItemSelectedListener { item ->
-
             when {
                 item.itemId == R.id.about -> {
                     val tr = supportFragmentManager.beginTransaction()

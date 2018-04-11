@@ -4,10 +4,10 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:id="@+id/council_roles"
-        android:layoutDirection="rtl"
+        android:id="@+id/committee_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
