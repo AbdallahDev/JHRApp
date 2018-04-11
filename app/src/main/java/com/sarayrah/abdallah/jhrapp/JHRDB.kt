@@ -2135,21 +2135,502 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
         p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
                 "لجنة الشؤون الخارجية"))
 
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "اللجنة الادارية"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة التربية والتعليم والثقافة"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الشباب والرياضة"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة التوجيه الوطني والاعلام"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الصحة والبيئة"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الزراعة والمياه"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة العمل والتنمية الاجتماعية والسكان"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الطاقة والثروة المعدنية"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الخدمات العامة والنقل"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة السياحة والاثار"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الحريات العامة وحقوق الانسان"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة فلسطين"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة الريف والبادية"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة النظام والسلوك"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة النزاهة والشفافية وتقصي الحقائق"))
+
+        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+                "لجنة المرأة وشؤون الاسرة"))
+
 
         //bellow is the committee_deputy table creation and insertion
         p0?.execSQL("CREATE TABLE `committee_deputy` ( `committee_id` INTEGER NOT NULL, `deputy_id` INTEGER NOT NULL )")
 
-        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 1))
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 90))
 
-        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 2))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 53))
 
-        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 3))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 122))
 
-        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 4))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 95))
 
-        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 5))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 86))
 
-        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 6))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 103))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 119))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 106))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 107))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 31))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 41))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 17))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 48))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 29))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 36))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 3))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 8))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 22))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 23))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 100))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 115))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 4))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 18))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 63))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 9))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 61))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 23))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 128))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 86))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 59))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 29))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 99))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 8))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 85))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 129))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 12))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 126))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 101))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 51))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 24))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 34))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 15))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(4, 116))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(3, 124))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 79))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 30))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 47))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 55))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 52))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 21))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 106))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 82))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 118))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 111))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(5, 43))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 62))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 67))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 89))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 33))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 97))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 120))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 51))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 70))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 127))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 118))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(6, 102))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 96))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 32))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 105))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 67))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 38))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 73))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 76))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 11))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 109))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 44))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(7, 130))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 38))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 104))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 26))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 93))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 102))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 96))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 125))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 117))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 75))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 17))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(8, 92))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 70))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 43))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 121))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 47))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 63))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 99))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 114))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 33))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 79))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 35))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(9, 40))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 55))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 52))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 5))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 56))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 80))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 45))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 107))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 44))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 100))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 94))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(10, 112))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 71))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 48))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 13))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 68))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 83))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 46))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 64))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 88))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 20))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 82))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(11, 114))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 61))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 89))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 21))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 90))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 71))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 62))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 49))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 12))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 83))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(12, 68))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 27))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 117))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 28))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 35))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 10))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 59))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 40))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 36))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 42))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 25))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(13, 50))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 101))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 77))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 126))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 20))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 1))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 93))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 39))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 119))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 92))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 123))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(14, 103))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 115))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 28))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 45))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 125))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 130))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 15))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 27))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 19))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 7))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 87))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(15, 24))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 7))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 77))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 19))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 1))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 73))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 105))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 32))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 54))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 9))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 75))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(16, 88))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(17, 7))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(17, 109))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(17, 128))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(17, 2))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(17, 113))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 64))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 112))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 91))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 108))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 66))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 34))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 87))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 80))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 25))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(18, 37))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 95))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 30))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 113))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 4))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 123))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 53))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 41))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 91))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 98))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 116))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(19, 120))
+
+        //new committee insertion
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 122))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 127))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 97))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 66))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 121))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 129))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 13))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 26))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 56))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 85))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(20, 124))
+
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
