@@ -1,0 +1,34 @@
+package com.sarayrah.abdallah.jhrapp.adapters
+
+import android.content.Context
+import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.sarayrah.abdallah.jhrapp.R
+import com.sarayrah.abdallah.jhrapp.models.CommitteeModel
+import kotlinx.android.synthetic.main.committee_row.view.*
+
+class CommitteesAdapter(val context: Context, private val list: ArrayList<CommitteeModel>) :
+        RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        val view = LayoutInflater.from(context).inflate(R.layout.committee_row, parent,
+                false)
+
+        return CommitteeView(view)
+    }
+
+    override fun getItemCount(): Int {
+        return list.size
+    }
+
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        (holder as CommitteeView).bind(list[position].committeeName)
+    }
+
+    class CommitteeView(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(nm: String) {
+            itemView.textView_committeeName.text = nm
+        }
+    }
+}

@@ -1,5 +1,5 @@
 package com.sarayrah.abdallah.jhrapp.models
 
-class committeeModel(nm: String) {
+class CommitteeModel(nm: String) {
     var committeeName = nm
 }
