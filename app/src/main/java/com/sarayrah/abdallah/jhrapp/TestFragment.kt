@@ -24,6 +24,8 @@ class TestFragment : Fragment() {
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.fragment_test, container, false)
 
+        var namesList = ""
+
         val obj = JHRDB(this.activity!!)
         val db = obj.readableDatabase
         val cursor = db.rawQuery("select committee.committee_name, deputy.name, " +
@@ -36,10 +38,12 @@ class TestFragment : Fragment() {
                 "and\n" +
                 "committee.committee_id = ?", arrayOf(Values.committee_id.toString()))
         cursor.moveToFirst()
+        while (!cursor.isAfterLast) {
+            namesList += cursor.getInt(cursor.getColumnIndex("image")).toString() + " "
+            cursor.moveToNext()
+        }
 
-        v.imageView_test.setImageResource(cursor.getInt(cursor.getColumnIndex("image")))
-        v.textView_test.text = cursor.getString(cursor.getColumnIndex("name"))
-
+        v.textView_test.text = namesList
         return v
     }
 
