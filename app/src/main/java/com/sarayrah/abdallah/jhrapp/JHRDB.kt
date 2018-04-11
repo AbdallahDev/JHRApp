@@ -1728,6 +1728,77 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                 R.mipmap.ibraheem_abuez_ic_launcher_round))
 
 
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "حابس ركاد خليف الشبيب",
+                "<p><strong>الاسم: </strong>حابس ركاد خليف الشبيب</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة الدكتور</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: ثلاثاء 1 يناير 1974<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>موظف في وزارة الداخلية</li>\n" +
+                        "</ul>",
+                R.mipmap.habes_shabeeb_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "مازن تركي سعود القاضي",
+                "<p><strong>الاسم: </strong>مازن تركي سعود القاضي</p>\n" +
+                        "<p><strong>اللقب: </strong>معالي المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: ثلاثاء 1 يناير 1957<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>مدير للامن العام 2007-2010</li>\n" +
+                        "<li>وزير سابق للداخلية</li>\n" +
+                        "<li>امين عام حزب الوفاء</li>\n" +
+                        "</ul>",
+                R.mipmap.mazen_qadee_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "صوان طلب مريبيع الشرفات",
+                "<p><strong>الاسم: </strong>صوان طلب مريبيع الشرفات</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة الدكتور</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: خميس 15 يوليو 1965<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>محاضر اكاديمي جامعات</li>\n" +
+                        "<li>ضابط متقاعد</li>\n" +
+                        "<li>رئيس نادي و جمعيات</li>\n" +
+                        "<li>عضو مجلس المحافظه</li>\n" +
+                        "</ul>",
+                R.mipmap.sawan_sharafat_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "سليمان حويلة عيد الزبن",
+                "<p><strong>الاسم: </strong>سليمان حويلة عيد الزبن</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: خميس 2 مايو 1968<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>محامي مزاول</li>\n" +
+                        "<li>مدرس في جامعة الزيتونة</li>\n" +
+                        "<li>محاضر غير متفرغ جامعة مؤتة</li>\n" +
+                        "<li>ضابط متقاعد من القوات المسلحة الأردنية</li>\n" +
+                        "<li>عضو المنظمة العربية لحقوق الانسان</li>\n" +
+                        "</ul>",
+                R.mipmap.sleman_zeben_ic_launcher_round))
+
+
         //bellow is the committee table creation and insertion
         p0?.execSQL("CREATE TABLE committee ( committee_id INTEGER PRIMARY KEY AUTOINCREMENT, committee_name VARCHAR(50))")
 
