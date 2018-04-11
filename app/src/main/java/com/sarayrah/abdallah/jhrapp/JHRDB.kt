@@ -2178,10 +2178,10 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                 "لجنة النظام والسلوك", R.mipmap.system_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة النزاهة والشفافية وتقصي الحقائق", R.mipmap.law_committee_launcher_round))
+                "لجنة النزاهة والشفافية وتقصي الحقائق", R.mipmap.integrity_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة المرأة وشؤون الاسرة", R.mipmap.law_committee_launcher_round))
+                "لجنة المرأة وشؤون الاسرة", R.mipmap.woman_committee_launcher_round))
 
 
         //bellow is the committee_deputy table creation and insertion
