@@ -1169,6 +1169,293 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
 
 
 
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "خالد زاهر العبد الفناطسة",
+                "<p><strong>الاسم: </strong>خالد زاهر العبد الفناطسة</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أحد 24 نوفمبر 1963<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>امين عام مساعد الاتحاد الدولي لنقابات عمال العرب</li>\n" +
+                        "<li>رئيس نقابه المناجم والتعدين الاردنيه</li>\n" +
+                        "<li>مستشار عمالي لرئيس مجلس اداره شركه مناجم الفوسفات الاردنيه</li>\n" +
+                        "<li>رئيس النقابة العامة للعاملين في المناجم والتعدين الاردنية</li>\n" +
+                        "<li>عضو سابق في حزب الجبهة الاردنية الموحدة</li>\n" +
+                        "</ul>",
+                R.mipmap.khaled_fanatsah_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "طارق سامي حنا خوري",
+                "<p><strong>الاسم: </strong>طارق سامي حنا خوري</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: جمعة 1 ديسمبر 1967<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>مدير عام شركة جورج وسامي خوري وشركاه 1988- الآن</li>\n" +
+                        "<li>رئيس مجلس إدارة - الشركة العربية للصناعات الغذائية</li>\n" +
+                        "<li>رئيس مجلس إدارة - شركة الحكماء للمعدات الطبية</li>\n" +
+                        "<li>رئيس مجلس إدارة - شركة أليسار التجارية</li>\n" +
+                        "<li>رئيس مجلس إدارة - شركة Q-Vision</li>\n" +
+                        "<li>رئيس نادي الوحدات</li>\n" +
+                        "</ul>",
+                R.mipmap.tariq_khorey_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "محمد جميل محمد الظهراوي",
+                "<p><strong>الاسم: </strong>محمد جميل محمد الظهراوي</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: اثنين 31 يناير 1972<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>العمل في القطاع الخاص</li>\n" +
+                        "</ul>",
+                R.mipmap.mohammad_thahraoy_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "محمد نوح علي معابدة القضاة",
+                "<p><strong>الاسم: </strong>محمد نوح علي معابدة القضاة</p>\n" +
+                        "<p><strong>اللقب: </strong>معالي الدكتور</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أحد 8 يونيو 1969<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>مرشد ديني بالدفاع المدني</li>\n" +
+                        "<li>مدرس في جامعة ال البيت وجامعة البلقاء و جامعة العلوم الاسلامية</li>\n" +
+                        "<li>وزير الشباب</li>\n" +
+                        "<li>وزير الاوقاف</li>\n" +
+                        "</ul>",
+                R.mipmap.mohammad_nooh_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "سعود سالم علي ابو محفوظ",
+                "<p><strong>الاسم: </strong>سعود سالم علي ابو محفوظ</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: اثنين 15 ديسمبر 1952<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>خبرات واسعة في مجال العمل الخيري والاغاثي والعمل العام والاعلامي والسياسي والسياحي والحزبي الاسلامي والاجتماعي والتربوي</li>\n" +
+                        "</ul>",
+                R.mipmap.saoud_mahfooth_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "نبيل كامل أحمد الشيشاني",
+                "<p><strong>الاسم: </strong>نبيل كامل أحمد الشيشاني</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: خميس 10 يناير 1957<p>\n",
+                R.mipmap.nabeel_sheshaney_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "قصي احمد عبدالحميد الدميسي",
+                "<p><strong>الاسم: </strong>قصي احمد عبدالحميد الدميسي</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أحد 30 يونيو 1968<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>عضو سابق في المجلس الاستشاري في لواء الرصيفة</li>\n" +
+                        "<li>حاصل على جائزة الملك عبدالله الثاني المعظم للعطاء والتميز</li>\n" +
+                        "<li>الدكتوراه الفخرية من الاتحاد العالمي لأشراف آل البيت</li>\n" +
+                        "</ul>",
+                R.mipmap.qosai_dmesey_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "فيصل نايف جاد الاعور",
+                "<p><strong>الاسم: </strong>فيصل نايف جاد الاعورp>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: جمعة 25 أكتوبر 1968<p>\n",
+                R.mipmap.faysal_aoar_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "مرزوق حمد عواد الهبارنة الدعجة",
+                "<p><strong>الاسم: </strong>مرزوق حمد عواد الهبارنة الدعجة</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: جمعة 2 مايو 1958<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>عضو مجلس بلدية الرصيفة</li>\n" +
+                        "<li>عضو مجلس استشاري الرصيفة</li>\n" +
+                        "<li>رئيس جمعية الامير فيصل</li>\n" +
+                        "<li>عضو جمعية شؤون الحج</li>\n" +
+                        "<li>عضو الهيئة الادارية لنادي الرصيفة</li>\n" +
+                        "</ul>",
+                R.mipmap.marzooq_daaja_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "حمود ابراهيم احمد الزواهرة",
+                "<p><strong>الاسم: </strong>حمود ابراهيم احمد الزواهرة</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: جمعة 28 مارس 1969<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>خدمة في القوات المسلحة الاردنية</li>\n" +
+                        "<li>العمل في القطاع التجاري (السيارات و العقارات)</li>\n" +
+                        "</ul>",
+                R.mipmap.ibrahim_bdoor_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "موسى بركات سعود الزواهرة",
+                "<p><strong>الاسم: </strong>موسى بركات سعود الزواهرة</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أربعاء 1 سبتمبر 1965<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>وكيل متقاعد من دائرة المخابرات العامة</li>\n" +
+                        "<li>عضو جمعية المستثمرين الاردنيين/الحرة /الزرقاء</li>\n" +
+                        "</ul>",
+                R.mipmap.mosa_zoahra_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "نواف مقبل سلمان المعلى الزيود",
+                "<p><strong>الاسم: </strong>نواف مقبل سلمان المعلى الزيود</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: اثنين 5 يناير 1959<p>\n",
+                R.mipmap.nawaf_nemat_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "علي سالم فاضل الخلايلة",
+                "<p><strong>الاسم: </strong>علي سالم فاضل الخلايلة</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: خميس 17 نوفمبر 1966<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>مدير شركة عقارية</li>\n" +
+                        "</ul>",
+                R.mipmap.ali_khlaylah_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "عبدالكريم فيصل ضيف الله الدغمي",
+                "<p><strong>الاسم: </strong>عبدالكريم فيصل ضيف الله الدغمي</p>\n" +
+                        "<p><strong>اللقب: </strong>معالي المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: سبت 5 فبراير 1955<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>وزير العدل - 5 /2 /1996-17 /4 /1997</li>\n" +
+                        "<li>وزير العمل/ وزير الشؤون رئاسة الوزراء - 1 /1 /1991-24 /10 /1991</li>\n" +
+                        "<li>وزير الشؤون البلدية والقروية والبيئة - 6 /12 /1989-1 /1 /1991</li>\n" +
+                        "<li>محامي مزاول</li>\n" +
+                        "<li>نائب سابق لعدة دورات ورئيس مجلس نواب سابق</li>\n" +
+                        "<li>عضو البرلمان العربي الانتقالي - القاهرة/جامعة الدول العربية</li>\n" +
+                        "</ul>",
+                R.mipmap.abdkareem_dogmy_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "رائد عقله مفلح الخزاعله",
+                "<p><strong>الاسم: </strong>رائد عقله مفلح الخزاعله</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أربعاء 3 مارس 1971<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>مدير مالي ونائب مدير عام شركة توزيع الغاز الطبيعي - الرياض - المملكة العربية السعودية</li>\n" +
+                        "<li>مدير عام شركة الافضلية - الرياض - الحي الدبلوماسي</li>\n" +
+                        "<li>مدير تنفيذي لشركة تقنية الالواح - الرياض - المدينة الصناعية</li>\n" +
+                        "</ul>",
+                R.mipmap.rayed_khazalah_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "مفلح محمد مفلح الخزاعلة",
+                "<p><strong>الاسم: </strong>مفلح محمد مفلح الخزاعلة</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: جمعة 30 أغسطس 1957<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>رئيس قسم في وزارة المياه والري</li>\n" +
+                        "<li>مدير عام شركة خاصة</li>\n" +
+                        "</ul>",
+                R.mipmap.mofleh_khazalah_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "شعيب خلف المحمد الشديفات",
+                "<p><strong>الاسم: </strong>شعيب خلف المحمد الشديفات</p>\n" +
+                        "<p><strong>اللقب: </strong>سعادة المحامي</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أربعاء 27 يونيو 1973<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>ممارسة مهنة المحاماة منذ عام 1995 الى الآن</li>\n" +
+                        "</ul>",
+                R.mipmap.ibrahim_bdoor_ic_launcher_round))
+
+        p0?.execSQL("insert into deputy(name, info, image) values(?, ?, ?)", arrayOf(
+                "محمود جميل خلف الفراهيد",
+                "<p><strong>الاسم: </strong>محمود جميل خلف الفراهيدp>\n" +
+                        "<p><strong>اللقب: </strong>سعادة السيد</p>\n" +
+                        "<p><strong>الجنس: </strong>ذكر</p>\n" +
+                        "<p><strong>الحالة الاجتماعية</strong>: متزوج</p>\n" +
+                        "<p><strong>تاريخ الميلاد</strong>: أربعاء 17 يونيو 1959<p>\n" +
+                        "\n" +
+                        "<br>\n" +
+                        "<p><strong>الخبرات والوظائف السابقة</strong></p>\n" +
+                        "<ul>\n" +
+                        "<li>مدير مركز اصلاح وتاهيل سواقة</li>\n" +
+                        "<li>مدير شرطة الكرك</li>\n" +
+                        "<li>مدير شرطة شرق عمان</li>\n" +
+                        "<li>مدير شرطة محافظة معان</li>\n" +
+                        "<li>مدير ادارة الدوريات الخارجية</li>\n" +
+                        "<li>محاضر مدرسة الاستخبارات العسكرية</li>\n" +
+                        "<li>محاضر باكاديمية الشرطة الملكية</li>\n" +
+                        "</ul>",
+                R.mipmap.mahmood_fraheed_ic_launcher_round))
+
+
         //bellow is the committee table creation and insertion
         p0?.execSQL("CREATE TABLE committee ( committee_id INTEGER PRIMARY KEY AUTOINCREMENT, committee_name VARCHAR(50))")
 
