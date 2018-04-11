@@ -53,7 +53,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="85" />
+                                                <entry key="scalingPercent" value="79" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -66,9 +66,9 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\education_committee.jpg" />
+                                      <entry key="foregroundImage" value="C:\Users\Abdallah.Sarayrah\Downloads\liberties_committee.jpg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="education_committee_launcher" />
+                                      <entry key="outputName" value="liberties_committee_launcher" />
                                       <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>

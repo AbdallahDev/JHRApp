@@ -2142,28 +2142,28 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                 "لجنة التربية والتعليم والثقافة", R.mipmap.education_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الشباب والرياضة", R.mipmap.law_committee_launcher_round))
+                "لجنة الشباب والرياضة", R.mipmap.sport_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة التوجيه الوطني والاعلام", R.mipmap.law_committee_launcher_round))
+                "لجنة التوجيه الوطني والاعلام", R.mipmap.media_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الصحة والبيئة", R.mipmap.law_committee_launcher_round))
+                "لجنة الصحة والبيئة", R.mipmap.health_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الزراعة والمياه", R.mipmap.law_committee_launcher_round))
+                "لجنة الزراعة والمياه", R.mipmap.agriculture_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة العمل والتنمية الاجتماعية والسكان", R.mipmap.law_committee_launcher_round))
+                "لجنة العمل والتنمية الاجتماعية والسكان", R.mipmap.work_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الطاقة والثروة المعدنية", R.mipmap.law_committee_launcher_round))
+                "لجنة الطاقة والثروة المعدنية", R.mipmap.energy_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الخدمات العامة والنقل", R.mipmap.law_committee_launcher_round))
+                "لجنة الخدمات العامة والنقل", R.mipmap.services_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة السياحة والاثار", R.mipmap.law_committee_launcher_round))
+                "لجنة السياحة والاثار", R.mipmap.tourisim_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
                 "لجنة الحريات العامة وحقوق الانسان", R.mipmap.law_committee_launcher_round))
