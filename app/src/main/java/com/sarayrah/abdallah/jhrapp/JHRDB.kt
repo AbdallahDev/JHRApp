@@ -294,6 +294,8 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
         p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 4))
 
         p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 5))
+
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(2, 6))
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {

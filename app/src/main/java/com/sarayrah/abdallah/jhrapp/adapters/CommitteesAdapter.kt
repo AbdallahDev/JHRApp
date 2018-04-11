@@ -1,11 +1,15 @@
 package com.sarayrah.abdallah.jhrapp.adapters
 
 import android.content.Context
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.sarayrah.abdallah.jhrapp.DeputyInfoDBFragment
 import com.sarayrah.abdallah.jhrapp.R
+import com.sarayrah.abdallah.jhrapp.TestFragment
+import com.sarayrah.abdallah.jhrapp.Values
 import com.sarayrah.abdallah.jhrapp.models.CommitteeModel
 import kotlinx.android.synthetic.main.committee_row.view.*
 
@@ -26,7 +30,14 @@ class CommitteesAdapter(val context: Context, private val list: ArrayList<Commit
         (holder as CommitteeView).bind(list[position].committeeName)
 
         holder.itemView.committee_row.setOnClickListener {
+            //bellow i store the values from the list in the committee_id static variable to
+            //decide the deputies related to the selected committee
+            Values.committee_id = list[position].committeeId
 
+            val tr = (context as AppCompatActivity).supportFragmentManager
+                    .beginTransaction()
+            val obj = TestFragment()
+            tr?.replace(R.id.fc, obj)?.addToBackStack(DeputyInfoDBFragment().tag)?.commit()
         }
     }
 

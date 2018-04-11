@@ -34,11 +34,11 @@ class TestFragment : Fragment() {
                 "and\n" +
                 "deputy.id = committee_deputy.deputy_id\n" +
                 "and\n" +
-                "committee.committee_id = 1", arrayOf())
+                "committee.committee_id = ?", arrayOf(Values.committee_id.toString()))
         cursor.moveToFirst()
 
-        v.imageView_test.setImageResource(cursor.getInt(cursor.getColumnIndex("deputy.image")))
-        v.textView_test.text = cursor.getString(cursor.getColumnIndex("deputy.name"))
+        v.imageView_test.setImageResource(cursor.getInt(cursor.getColumnIndex("image")))
+        v.textView_test.text = cursor.getString(cursor.getColumnIndex("name"))
 
         return v
     }
