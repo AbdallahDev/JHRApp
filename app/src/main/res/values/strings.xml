@@ -13,6 +13,9 @@
     <string name="deputy_name">النائب</string>
     <string name="deputy_image">صورة النائب</string>
 
+    //this in the committe_row.xml file
+    <string name="committe_name">اللجنة</string>
+
     //those values are for the about pages titles and bodies
     <string name="council_roles_title">وظائف مجلس النواب</string>
     <string name="council_roles_body"><b>تناط بمجلس النواب وظيفتين أساسيتين هما:</b>\n\n
@@ -1953,5 +1956,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //those values are for the committees pages titles
+    <string name="wrok_committee_title">لجنة العمل</string>
+    <string name="finance_committee_title">اللجنة المالية</string>
+    <string name="economy_committee_title">لجنة الاقتصاد والاستثمار</string>
+    <string name="foreign_committee_title">لجنة الشؤون الخارجية</string>
 
 </resources>
