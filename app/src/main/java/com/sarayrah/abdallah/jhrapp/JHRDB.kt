@@ -2121,67 +2121,67 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
 
 
         //bellow is the committee table creation and insertion
-        p0?.execSQL("CREATE TABLE committee ( committee_id INTEGER PRIMARY KEY AUTOINCREMENT, committee_name VARCHAR(50))")
+        p0?.execSQL("CREATE TABLE committee ( committee_id INTEGER PRIMARY KEY AUTOINCREMENT, committee_name VARCHAR(50), committee_image INTEGER)")
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "اللجنة القانونية"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "اللجنة القانونية", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "اللجنة المالية"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "اللجنة المالية", R.mipmap.finance_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الاقتصاد والاستثمار"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الاقتصاد والاستثمار", R.mipmap.commerce_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الشؤون الخارجية"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الشؤون الخارجية", R.mipmap.affairs_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "اللجنة الادارية"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "اللجنة الادارية", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة التربية والتعليم والثقافة"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة التربية والتعليم والثقافة", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الشباب والرياضة"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الشباب والرياضة", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة التوجيه الوطني والاعلام"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة التوجيه الوطني والاعلام", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الصحة والبيئة"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الصحة والبيئة", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الزراعة والمياه"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الزراعة والمياه", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة العمل والتنمية الاجتماعية والسكان"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة العمل والتنمية الاجتماعية والسكان", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الطاقة والثروة المعدنية"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الطاقة والثروة المعدنية", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الخدمات العامة والنقل"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الخدمات العامة والنقل", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة السياحة والاثار"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة السياحة والاثار", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الحريات العامة وحقوق الانسان"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الحريات العامة وحقوق الانسان", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة فلسطين"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة فلسطين", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الريف والبادية"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة الريف والبادية", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة النظام والسلوك"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة النظام والسلوك", R.mipmap.law_committee_launcher_round))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
                 "لجنة النزاهة والشفافية وتقصي الحقائق"))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة المرأة وشؤون الاسرة"))
+        p0?.execSQL("insert into committee (committee_name) values(?, ?)", arrayOf(
+                "لجنة المرأة وشؤون الاسرة", R.mipmap.law_committee_launcher_round))
 
 
         //bellow is the committee_deputy table creation and insertion

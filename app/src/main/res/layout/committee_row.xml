@@ -10,11 +10,11 @@
         android:layoutDirection="rtl"
         android:orientation="horizontal">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
-            android:src="@mipmap/law_ic_launcher" />
+            android:src="@mipmap/law_committee_launcher_round" />
 
         <TextView
             android:id="@+id/textView_committeeName"
