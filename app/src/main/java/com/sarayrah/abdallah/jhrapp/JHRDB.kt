@@ -2166,16 +2166,16 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
                 "لجنة السياحة والاثار", R.mipmap.tourisim_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الحريات العامة وحقوق الانسان", R.mipmap.law_committee_launcher_round))
+                "لجنة الحريات العامة وحقوق الانسان", R.mipmap.liberties_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة فلسطين", R.mipmap.law_committee_launcher_round))
+                "لجنة فلسطين", R.mipmap.palestain_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الريف والبادية", R.mipmap.law_committee_launcher_round))
+                "لجنة الريف والبادية", R.mipmap.country_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة النظام والسلوك", R.mipmap.law_committee_launcher_round))
+                "لجنة النظام والسلوك", R.mipmap.system_committee_launcher_round))
 
         p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
                 "لجنة النزاهة والشفافية وتقصي الحقائق", R.mipmap.law_committee_launcher_round))
