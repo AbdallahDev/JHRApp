@@ -1,0 +1,34 @@
+package com.sarayrah.abdallah.jhrapp.adapters
+
+import android.content.Context
+import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.sarayrah.abdallah.jhrapp.R
+import com.sarayrah.abdallah.jhrapp.models.CommitteeDeputyModel
+import kotlinx.android.synthetic.main.deputy_row.view.*
+
+class CommitteeDeputiesAdapter(val context: Context, private val list: ArrayList<CommitteeDeputyModel>) :
+        RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        val view = LayoutInflater.from(context).inflate(R.layout.deputy_row, parent,
+                false)
+        return CommitteeDeputyView(view)
+    }
+
+    override fun getItemCount(): Int {
+        return list.size
+    }
+
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        (holder as CommitteeDeputyView).bind(list[position].deputyImage, list[position].deputyName)
+    }
+
+    class CommitteeDeputyView(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(img: Int, nm: String) {
+            itemView.imageView_deputyImage.setImageResource(img)
+            itemView.textView_deputyName.text = nm
+        }
+    }
+}
