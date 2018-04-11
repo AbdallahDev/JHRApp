@@ -22,13 +22,14 @@ class CommitteeDeputiesAdapter(val context: Context, private val list: ArrayList
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        (holder as CommitteeDeputyView).bind(list[position].deputyImage, list[position].deputyName)
+        (holder as CommitteeDeputyView).bind(list[position].deputyName, list[position].deputyImage)
     }
 
     class CommitteeDeputyView(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(img: Int, nm: String) {
-            itemView.imageView_deputyImage.setImageResource(img)
+        fun bind(nm: String, img: Int) {
             itemView.textView_deputyName.text = nm
+            itemView.imageView_deputyImage.setImageResource(img)
+
         }
     }
 }
