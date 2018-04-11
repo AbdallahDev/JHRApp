@@ -285,18 +285,15 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
         //bellow is the committee_deputy table creation and insertion
         p0?.execSQL("CREATE TABLE `committee_deputy` ( `committee_id` INTEGER NOT NULL, `deputy_id` INTEGER NOT NULL )")
 
-        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(
-                "اللجنة القانونية"))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 1))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "اللجنة المالية"))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 2))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الاقتصاد والاستثمار"))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 3))
 
-        p0?.execSQL("insert into committee (committee_name) values(?)", arrayOf(
-                "لجنة الشؤون الخارجية"))
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 4))
 
+        p0?.execSQL("insert into committee_deputy values(?, ?)", arrayOf(1, 5))
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
