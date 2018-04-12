@@ -30,14 +30,14 @@ class CommitteesFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_committees, container, false)
 
-        val committesList = ArrayList<CommitteeModel>()
+        val committeesList = ArrayList<CommitteeModel>()
 
         val obj = JHRDB(this.activity!!)
         val db = obj.readableDatabase
         val cursor = db.rawQuery("select committee_id, committee_name, committee_image from committee", arrayOf())
         cursor.moveToFirst()
         while (!cursor.isAfterLast) {
-            committesList.add(CommitteeModel(cursor.getInt(
+            committeesList.add(CommitteeModel(cursor.getInt(
                     cursor.getColumnIndex("committee_id")),
                     cursor.getString(
                             cursor.getColumnIndex("committee_name")),
@@ -46,7 +46,7 @@ class CommitteesFragment : Fragment() {
             cursor.moveToNext()
         }
 
-        val adapter = CommitteesAdapter(this.activity!!, committesList)
+        val adapter = CommitteesAdapter(this.activity!!, committeesList)
         view.committees_recyclerView.layoutManager = LinearLayoutManager(this.activity!!)
         view.committees_recyclerView.adapter = adapter
 
