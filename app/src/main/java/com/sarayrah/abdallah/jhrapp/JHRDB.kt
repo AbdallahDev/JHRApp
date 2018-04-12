@@ -2121,67 +2121,199 @@ class JHRDB(context: Context) : SQLiteOpenHelper(context, "jhr.db", null, 1) {
 
 
         //bellow is the committee table creation and insertion
-        p0?.execSQL("CREATE TABLE committee ( committee_id INTEGER PRIMARY KEY AUTOINCREMENT, committee_name VARCHAR(50), committee_image INTEGER)")
+        p0?.execSQL("CREATE TABLE committee ( committee_id INTEGER PRIMARY KEY AUTOINCREMENT, committee_name VARCHAR(50), committee_image INTEGER, committee_role TEXT)")
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "اللجنة القانونية", R.mipmap.law_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "اللجنة القانونية", R.mipmap.law_committee_launcher_round, "<p><strong>1- اللجنة القانونية ويناط بها:</strong></p>" +
+                "<p>\n" +
+                "أ. دراسة القوانين والاقتراحات بقوانين التي تتعلق بالدستور والانتخاب العام والتشريعات المدنية والجنائية والحقوقية والمحاكم والتنظيم القضائي والاتفاقيات القضائية وقوانين التنفيذ والأحوال الشخصية والجنسية والاستملاك والإيجار والدفاع والعفو العام والمخدرات والمؤثرات النفسية والسير والنقابات، وما في حكم تلك التشريعات، وأي قوانين لا تدخل في اختصاص لجنة أخرى وأي أمور تحال إليها من الرئيس او المجلس.\n" +
+                "</p>\n" +
+                "<p>ب. دراسة النظام الداخلي للمجلس واقتراحات تعديله.</p>\n" +
+                "<p>ج. دراسة القضايا التي تتعلق بحصانة النواب.</p>\n" +
+                "<p>د. مساعدة لجان المجلس الأخرى في صياغة النصوص التشريعية.</p>"))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "اللجنة المالية", R.mipmap.finance_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "اللجنة المالية", R.mipmap.finance_committee_launcher_round,
+                "<p><strong>2- اللجنة المالية ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. دراسة قانون الموازنة العامة وقانون موازنات الوحدات الحكومية والرقابة على تطبيقها وأية مقترحات تتعلق بها.\n" +
+                        "</p>\n" +
+                        "<p>ب. دراسة الحسابات الختامية للوزارات والدوائر والمؤسسات والوحدات الحكومية ورفع التوصيات بشأنها للمجلس.</p>\n" +
+                        "<p>ج. دراسة تقارير ديوان المحاسبة وابداء التوصيات بشأنها.</p>\n" +
+                        "<p>د. دراسة القوانين المالية التي لها علاقة بزيادة الواردات أو النفقات أو إنقاصها.\n</p>" +
+                        "<p>هـ. دراسة المديونية العامة للدولة وتقديم الاقتراحات اللازمة بشأنها.\n</p>" +
+                        "<p>و. دراسة موازنة امانة عمان الكبرى وموازنات بلديات الفئة الأولى.\n</p>" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الاقتصاد والاستثمار", R.mipmap.commerce_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الاقتصاد والاستثمار", R.mipmap.commerce_committee_launcher_round,
+                "<p><strong>3- لجنة الاقتصاد والاستثمار ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. دراسة السياسات الاقتصادية والمالية والضريبية والاستثمارية.\n" +
+                        "</p>\n" +
+                        "<p>ب. دراسة قوانين التموين والتجارة والصناعة والشركات والبنوك والتأمين والعملة والصرافة والاستثمار والمالية والضريبية وما في حكمها.</p>\n" +
+                        "<p>ج. دراسة الوضع التمويني ومراقبة الأسواق وحماية المستهلك.</p>\n" +
+                        "<p>د. دراسة المؤشرات الاقتصادية ومعدلات النمو والتضخم والانكماش.\n</p>" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الشؤون الخارجية", R.mipmap.affairs_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الشؤون الخارجية", R.mipmap.affairs_committee_launcher_round,
+                "<p><strong>4- لجنة الشؤون الخارجية ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. النظر في كل الشؤون التي لها صلة بالسياسة الخارجية.\n" +
+                        "</p>\n" +
+                        "<p>ب. دراسة المعاهدات والاتفاقيات التي تختص بالسياسة الخارجية..</p>\n" +
+                        "<p>ج. تنظيم العلاقات مع البرلمانات الأخرى والاتحادات والجمعيات البرلمانية.</p>\n" +
+                        "<p>د. إعداد مشاريع البيانات السياسية التي يصدرها المجلس.\n</p>" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "اللجنة الادارية", R.mipmap.administration_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "اللجنة الادارية", R.mipmap.administration_committee_launcher_round,
+                "<p><strong>5- اللجنة الإدارية ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. دراسة القوانين والأمور والاقتراحات التي تتعلق بالإدارة العامة والادارة المحلية والبلديات.\n" +
+                        "</p>\n" +
+                        "<p>ب. دراسة القوانين والتقارير والأمور التي تتعلق بالموظفين العموميين وأسس التعيين وإنهاء الخدمة والتقاعد والتعويض..</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة التربية والتعليم والثقافة", R.mipmap.education_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة التربية والتعليم والثقافة", R.mipmap.education_committee_launcher_round,
+                "<p><strong>6- لجنة التربية والتعليم والثقافة ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "\n" +
+                        "دراسة القوانين والأمور والاقتراحات التي تتعلق بالتربية والتعليم والتعليم العالي والبحث العلمي والثقافة وما في حكمها.\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الشباب والرياضة", R.mipmap.sport_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الشباب والرياضة", R.mipmap.sport_committee_launcher_round,
+                "<p><strong>7- لجنة الشباب والرياضة ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. دراسة القوانين والأمور والاقتراحات المتعلقة بالشباب والرياضة.\n" +
+                        "</p>\n" +
+                        "<p>ب. دراسة الأمور المتعلقة بالاتحادات واللجان والأندية والمراكز الشبابية والرياضية..</p>\n" +
+                        "<p>ج. دراسة الوضع التمويني ومراقبة الأسواق وحماية المستهلك.</p>\n" +""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة التوجيه الوطني والاعلام", R.mipmap.media_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة التوجيه الوطني والاعلام", R.mipmap.media_committee_launcher_round,
+                "<p><strong>8- لجنة التوجيه الوطني والإعلام ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. دراسة القوانين والأمور والاقتراحات التي تتعلق بالإعلام والمطبوعات والنشر والصحافة والوعظ والإرشاد والأوقاف.\n" +
+                        "</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الصحة والبيئة", R.mipmap.health_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الصحة والبيئة", R.mipmap.health_committee_launcher_round,
+                "<p><strong>9- لجنة الصحة والبيئة ويناط بها :</strong></p>" +
+                        "<p>\n" +
+                        "دراسة القوانين والأمور والاقتراحات التي تتعلق بالصحة العامة والخدمات الصحية والتأمينات الصحية وشؤون البيئة.\n" +
+                        "</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الزراعة والمياه", R.mipmap.agriculture_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الزراعة والمياه", R.mipmap.agriculture_committee_launcher_round,
+                "<p><strong>10- لجنة الزراعة والمياه ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. دراسة القوانين والأمور والاقتراحات التي تتعلق بالزراعة المروية والبعلية والأراضي الزراعية وحمايتها من التصحر والثروة الحيوانية، والمياه واستخداماتها والسدود والصرف الصحي.\n" +
+                        "</p>\n" +
+                        "<p>ب. دراسة سياسات التسويق الزراعي وحماية المزارعين..</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة العمل والتنمية الاجتماعية والسكان", R.mipmap.work_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة العمل والتنمية الاجتماعية والسكان", R.mipmap.work_committee_launcher_round,
+                "<p><strong>11- لجنة العمل والتنمية الاجتماعية والسكان ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ. دراسة القوانين والأمور والاقتراحات التي تتعلق بشؤون العمل والعمال والتدريب المهني والتأمينات الاجتماعية والجمعيات والاتحادات الخيرية وشؤون التنمية الاجتماعية والصناديق الوطنية التي تعمل في مجال المعونة الوطنية والتنمية والتشغيل وما في حكمها.\n" +
+                        "</p>\n" +
+                        "<p>ب.دراسة القوانين والأمور المتعلقة بالسكان والتنمية والفرصة السكانية والإحصاءات العامة وما في حكمها.</p>\n" +
+                        "<p>ج.دراسة ومراجعة سياسات تنظيم سوق العمل واستقدام العمالة الوافدة.</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الطاقة والثروة المعدنية", R.mipmap.energy_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الطاقة والثروة المعدنية", R.mipmap.energy_committee_launcher_round,
+                "<p><strong>12- لجنة الطاقة والثروة المعدنية ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ.دراسة القوانين والأمور والاقتراحات التي تتعلق بالكهرباء والنفط والغاز ومصادر الطاقة المتجددة والبديلة والثروة المعدنية والاتفاقيات التي تتعلق بها.\n" +
+                        "</p>\n" +
+                        "<p>ب.دراسة ومراقبة سياسات تسعير المشتقات النفطية ومصادر الطاقة الأخرى..</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الخدمات العامة والنقل", R.mipmap.services_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الخدمات العامة والنقل", R.mipmap.services_committee_launcher_round,
+                "<p><strong>13- لجنة الخدمات العامة والنقل ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ.دراسة القوانين والأمور والاقتراحات التي تتعلق بالأشغال العامة والنقل والسير على الطرق والبريد والاتصالات وما في حكمها.\n" +
+                        "</p>\n" +
+                        "<p>ب. دراسة ومراجعة سياسات قطاع النقل العام وسبل تطويره..</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة السياحة والاثار", R.mipmap.tourisim_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة السياحة والاثار", R.mipmap.tourisim_committee_launcher_round,
+                "<p><strong>14- لجنة السياحة والآثار ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ.دراسة القوانين والأمور والاقتراحات التي تتعلق بالسياحة وسبل تطويرها والآثار وسبل حمايتها.\n" +
+                        "</p>\n" +
+                        "<p>ب.مراجعة ودراسة وتطوير اساليب وسبل دعم السياحة وتسويقها باعتبارها أحد مصادر الدخل القومي وتقديم المقترحات اللازمة بشأنها..</p>\n" +
+                        "<p>ج.دراسة السياسات والمؤشرات المتعلقة بالسياحة والاثار والقطاعات المساندة والمرتبطة بها وتقديم التوصيات بشأنها.</p>\n" +
+                        "<p>د. دراسة القوانين المرتبطة بقطاع السياحة والاثار والنقل السياحي والطيران وما في حكمها.\n</p>" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الحريات العامة وحقوق الانسان", R.mipmap.liberties_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الحريات العامة وحقوق الانسان", R.mipmap.liberties_committee_launcher_round,
+                "<p><strong>15- لجنة الحريات العامة وحقوق الإنسان ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ.دراسة القوانين والأمور والاقتراحات التي تتعلق بالحقوق والحريات العامة التي كفلها الدستور والقانون.\n" +
+                        "</p>\n" +
+                        "<p>ب.مراقبة مراكز الإصلاح والتأهيل والتوقيف المؤقت ومراكز الرعاية الاجتماعية وما في حكمها.</p>\n" +
+                        "<p>ج.النظر في الشكاوى والتظلمات المتعلقة بانتهاكات حقوق الإنسان والحريات العامة.</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة فلسطين", R.mipmap.palestain_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة فلسطين", R.mipmap.palestain_committee_launcher_round,
+                "<p><strong>16- لجنة فلسطين ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ.النظر في التطورات السياسية المتعلقة بفلسطين والتنسيب للمجلس لاتخاذ المواقف اللازمة بشأنها.\n" +
+                        "</p>\n" +
+                        "<p>ب.الاهتمام بوضع القدس ومكانتها والمقدسات الإسلامية والمسيحية في فلسطين.</p>\n" +
+                        "<p>ج.متابعة ومعالجة أوضاع اللاجئين الفلسطينيين والنازحين بهدف عودتهم الى بلادهم.</p>\n" +
+                        "<p>د.متابعة شؤون المنفيين والمبعدين الفلسطينيين إلى الأردن.</p>\n" +
+                        "<p>هـ.الاهتمام بتوثيق العلاقات الأخوية بين الأردن وفلسطين وتمتين تلك العلاقات في المجالات السياسية والثقافية والاجتماعية والتربوية والاقتصادية.</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة الريف والبادية", R.mipmap.country_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة الريف والبادية", R.mipmap.country_committee_launcher_round,
+                "<p><strong>17- لجنة الريف والبادية ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "دراسة الأمور والاقتراحات التي تتعلق بإعمار الريف والبادية وتنميتهما، وتطوير خدماتهما.\n" +
+                        "</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة النظام والسلوك", R.mipmap.system_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة النظام والسلوك", R.mipmap.system_committee_launcher_round,
+                "<p><strong>18- لجنة النظام والسلوك ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ.الإشراف على تطبيق مدونة السلوك ودراسة أي مقترحات بشأنها.\n" +
+                        "</p>\n" +
+                        "<p>ب. النظر في الشكاوى التي تقدم من النواب ضد أي جهة.</p>\n" +
+                        "<p>ج. النظر في أي مخالفة لمدونة السلوك.</p>\n" +
+                        "<p>د.النظر في أي تصرف يسيء إلى سمعة المجلس وهيبته وأعضائه سواء أكان تحت القبة أم خارجها.</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة النزاهة والشفافية وتقصي الحقائق", R.mipmap.integrity_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة النزاهة والشفافية وتقصي الحقائق", R.mipmap.integrity_committee_launcher_round,
+                "<p><strong>19- لجنة النزاهة والشفافية وتقصي الحقائق ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "دراسة الأمور المتعلقة بالفساد المالي والإداري في المؤسسات الرسمية العامة والمؤسسات العامة ومراقبة اجراءات مكافحة الفساد.\n" +
+                        "</p>\n" +
+                        ""))
 
-        p0?.execSQL("insert into committee (committee_name, committee_image) values(?, ?)", arrayOf(
-                "لجنة المرأة وشؤون الاسرة", R.mipmap.woman_committee_launcher_round))
+        p0?.execSQL("insert into committee (committee_name, committee_image, committee_role) values(?, ?, ?)", arrayOf(
+                "لجنة المرأة وشؤون الاسرة", R.mipmap.woman_committee_launcher_round,
+                "<p><strong>20- لجنة المرأة وشؤون الأسرة ويناط بها:</strong></p>" +
+                        "<p>\n" +
+                        "أ.دراسة القوانين والأمور المتعلقة بشؤون المرأة والأسرة والطفل ومتابعة السياسات والخطط والبرامج اللازمة لتمكين المرأة اجتماعياً وثقافياً واقتصادياً وسياسياً.\n" +
+                        "</p>\n" +
+                        "<p>ب. متابعة برامج الأمومة والطفولة والرعاية.</p>\n" +
+                        ""))
 
 
         //bellow is the committee_deputy table creation and insertion
