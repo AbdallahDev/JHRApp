@@ -33,8 +33,8 @@ class CommitteesAdapter(val context: Context, private val list: ArrayList<Commit
 
             val tr = (context as AppCompatActivity).supportFragmentManager
                     .beginTransaction()
-            val obj = CommitteeInfoFragment()
-            tr?.replace(R.id.fc, obj)?.addToBackStack(CommitteeInfoFragment().tag)?.commit()
+            val obj = CommitteeDeputiesFragment()
+            tr?.replace(R.id.fc, obj)?.addToBackStack(CommitteeDeputiesFragment().tag)?.commit()
         }
     }
 
