@@ -39,8 +39,8 @@ class TestFragment : Fragment() {
     class FPA(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         override fun getItem(position: Int): Fragment {
             return when (position) {
-                0 -> CommitteesFragment()
-                else -> AboutFragment()
+                0 -> CommitteeRoleFragment()
+                else -> CommitteeDeputiesFragment()
             }
 
         }

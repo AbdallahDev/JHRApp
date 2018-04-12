@@ -9,6 +9,10 @@ import android.view.ViewGroup
 import com.sarayrah.abdallah.jhrapp.*
 import com.sarayrah.abdallah.jhrapp.models.CommitteeModel
 import kotlinx.android.synthetic.main.committee_row.view.*
+import android.support.v4.content.ContextCompat.startActivity
+import android.content.Intent
+
+
 
 class CommitteesAdapter(val context: Context, private val list: ArrayList<CommitteeModel>) :
         RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -31,10 +35,13 @@ class CommitteesAdapter(val context: Context, private val list: ArrayList<Commit
             //decide the deputies related to the selected committee
             Values.committee_id = list[position].committeeId
 
-            val tr = (context as AppCompatActivity).supportFragmentManager
-                    .beginTransaction()
-            val obj = CommitteeDeputiesFragment()
-            tr?.replace(R.id.fc, obj)?.addToBackStack(CommitteeDeputiesFragment().tag)?.commit()
+//            val tr = (context as AppCompatActivity).supportFragmentManager
+//                    .beginTransaction()
+//            val obj = TestFragment()
+//            tr?.replace(R.id.fc, obj)?.addToBackStack(TestFragment().tag)?.commit()
+
+            val intent = Intent(context, TestActivity::class.java)
+            context.startActivity(intent)
         }
     }
 

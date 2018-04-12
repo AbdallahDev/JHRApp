@@ -19,12 +19,12 @@
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="tab1" />
+            android:text="مهام اللجنة" />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="tab2" />
+            android:text="الاعضاء" />
     </android.support.design.widget.TabLayout>
 
     <android.support.v4.view.ViewPager
