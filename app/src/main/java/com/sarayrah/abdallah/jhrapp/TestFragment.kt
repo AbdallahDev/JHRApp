@@ -4,11 +4,11 @@ package com.sarayrah.abdallah.jhrapp
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentPagerAdapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.deputy_row.*
-import kotlinx.android.synthetic.main.fragment_test.*
 import kotlinx.android.synthetic.main.fragment_test.view.*
 
 
@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.fragment_test.view.*
  */
 class TestFragment : Fragment() {
 
+    private var fragmentAdp: FPA? = null
 
     @SuppressLint("Recycle")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -24,27 +25,29 @@ class TestFragment : Fragment() {
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.fragment_test, container, false)
 
-        var namesList = ""
+        fragmentAdp = FPA(this.fragmentManager!!)
+        v.vp.adapter = fragmentAdp
 
-        val obj = JHRDB(this.activity!!)
-        val db = obj.readableDatabase
-        val cursor = db.rawQuery("select committee.committee_name, deputy.name, " +
-                "deputy.image " +
-                "from committee, deputy, committee_deputy\n" +
-                "where\n" +
-                "committee.committee_id = committee_deputy.committee_id\n" +
-                "and\n" +
-                "deputy.id = committee_deputy.deputy_id\n" +
-                "and\n" +
-                "committee.committee_id = ?", arrayOf(Values.committee_id.toString()))
-        cursor.moveToFirst()
-        while (!cursor.isAfterLast) {
-            namesList += cursor.getInt(cursor.getColumnIndex("image")).toString() + " "
-            cursor.moveToNext()
+        v.vp.addOnPageChangeListener(android.support.design.widget.TabLayout
+                .TabLayoutOnPageChangeListener(v.tabs))
+
+        v.tabs.addOnTabSelectedListener(android.support.design.widget.TabLayout.ViewPagerOnTabSelectedListener(v.vp))
+
+        return v
+    }
+
+    class FPA(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+        override fun getItem(position: Int): Fragment {
+            return when (position) {
+                0 -> CommitteesFragment()
+                else -> AboutFragment()
+            }
+
         }
 
-        v.textView_test.text = namesList
-        return v
+        override fun getCount(): Int {
+            return 2
+        }
     }
 
 }// Required empty public constructor
