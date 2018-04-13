@@ -40,7 +40,7 @@ class CommitteesAdapter(val context: Context, private val list: ArrayList<Commit
 //            val obj = TestFragment()
 //            tr?.replace(R.id.fc, obj)?.addToBackStack(TestFragment().tag)?.commit()
 
-            val intent = Intent(context, TestActivity::class.java)
+            val intent = Intent(context, CommitteeInfoActivity::class.java)
             context.startActivity(intent)
         }
     }
