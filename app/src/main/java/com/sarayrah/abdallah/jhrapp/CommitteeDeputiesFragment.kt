@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.sarayrah.abdallah.jhrapp.adapters.CommitteeDeputiesAdapter
 import com.sarayrah.abdallah.jhrapp.models.CommitteeDeputyModel
-import kotlinx.android.synthetic.main.fragment_committee_info.view.*
+import kotlinx.android.synthetic.main.fragment_committee_deputies.view.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -27,6 +27,7 @@ class CommitteeDeputiesFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_committee_deputies, container, false)
+
         val deputiesList = ArrayList<CommitteeDeputyModel>()
 
         val obj = JHRDB(this.activity!!)
