@@ -16,7 +16,7 @@ class CommitteeInfoActivity : AppCompatActivity() {
         supportActionBar!!.setCustomView(R.layout.titlebar)
 
         val tr = supportFragmentManager.beginTransaction()
-        val obj = TestFragment()
+        val obj = CommitteeInfoFragment()
         tr.replace(R.id.fc, obj)
         tr.commit()
 
