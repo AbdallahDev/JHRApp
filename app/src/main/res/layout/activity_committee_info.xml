@@ -6,14 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".CommitteeInfoActivity">
 
-    <RelativeLayout
-        android:id="@+id/fc"
-        android:layout_width="match_parent"
-        android:layout_height="540dp"
-        app:layout_constraintBottom_toTopOf="@+id/nv"
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/fc"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            app:layout_constraintBottom_toTopOf="@+id/nv" />
+    </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/nv"
@@ -21,9 +27,8 @@
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView"
         app:menu="@menu/bn_menu" />
 
 </android.support.constraint.ConstraintLayout>
