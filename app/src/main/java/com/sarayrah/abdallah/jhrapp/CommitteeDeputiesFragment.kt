@@ -33,7 +33,7 @@ class CommitteeDeputiesFragment : Fragment() {
         val obj = JHRDB(this.activity!!)
         val db = obj.readableDatabase
         val cursor = db.rawQuery("select committee.committee_name, deputy.name, " +
-                "deputy.image " +
+                "deputy.info, deputy.image " +
                 "from committee, deputy, committee_deputy\n" +
                 "where\n" +
                 "committee.committee_id = committee_deputy.committee_id\n" +
@@ -45,6 +45,7 @@ class CommitteeDeputiesFragment : Fragment() {
         while (!cursor.isAfterLast) {
             deputiesList.add(CommitteeDeputyModel(
                     cursor.getString(cursor.getColumnIndex("name")),
+                    cursor.getString(cursor.getColumnIndex("info")),
                     cursor.getInt(cursor.getColumnIndex("image"))))
             cursor.moveToNext()
         }
