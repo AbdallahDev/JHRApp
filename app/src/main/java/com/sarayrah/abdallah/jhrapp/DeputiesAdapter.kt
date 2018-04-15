@@ -27,7 +27,7 @@ class DeputiesAdapter(private var context: Context, private var list: ArrayList<
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as DeputyView).bind(list[position].name, list[position].image)
 
-        holder.itemView.imageView_deputyImage.setOnClickListener {
+        holder.itemView.layout_deputy.setOnClickListener {
             //bellow i store the values from the list in the static variables to be used later
             //in the other pages, like the deputyInfoDBFragment page
             Values.deputy_info = list[position].info
