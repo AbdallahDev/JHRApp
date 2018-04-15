@@ -35,11 +35,6 @@ class CommitteesAdapter(val context: Context, private val list: ArrayList<Commit
             //decide the deputies related to the selected committee
             Values.committee_id = list[position].committeeId
 
-//            val tr = (context as AppCompatActivity).supportFragmentManager
-//                    .beginTransaction()
-//            val obj = TestFragment()
-//            tr?.replace(R.id.fc, obj)?.addToBackStack(TestFragment().tag)?.commit()
-
             val intent = Intent(context, CommitteeInfoActivity::class.java)
             context.startActivity(intent)
         }
