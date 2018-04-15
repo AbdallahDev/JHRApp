@@ -29,7 +29,6 @@ class CommitteeDeputiesAdapter(val context: Context, private val list: ArrayList
         fun bind(nm: String, img: Int) {
             itemView.textView_deputyName.text = nm
             itemView.imageView_deputyImage.setImageResource(img)
-
         }
     }
 }
