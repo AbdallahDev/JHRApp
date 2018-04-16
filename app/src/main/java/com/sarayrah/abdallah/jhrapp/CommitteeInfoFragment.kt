@@ -9,6 +9,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_committee_info.view.*
+import com.sarayrah.abdallah.jhrapp.R.id.vp
+
+
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -29,7 +32,8 @@ class CommitteeInfoFragment : Fragment() {
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.fragment_committee_info, container, false)
 
-        fragmentAdp = FPA(this.fragmentManager!!)
+        fragmentAdp = FPA(this.childFragmentManager)
+
         v.vp.adapter = fragmentAdp
 
         v.vp.addOnPageChangeListener(android.support.design.widget.TabLayout
