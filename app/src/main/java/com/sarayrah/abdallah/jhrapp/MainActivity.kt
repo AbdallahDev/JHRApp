@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
                 }
                 item.itemId == R.id.deputies -> {
                     val tr = supportFragmentManager.beginTransaction()
-                    val obj = DeputiesDBFragment()
-                    tr.replace(R.id.fc, obj)?.addToBackStack(DeputiesDBFragment().tag)?.commit()
+                    val obj = DeputiesAPIFragment()
+                    tr.replace(R.id.fc, obj)?.addToBackStack(DeputiesAPIFragment().tag)?.commit()
                 }
                 item.itemId == R.id.committees -> {
                     val tr = supportFragmentManager.beginTransaction()

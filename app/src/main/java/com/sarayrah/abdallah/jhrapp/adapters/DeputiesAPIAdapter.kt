@@ -22,8 +22,10 @@ class DeputiesAPIAdapter(val context: Context, private val list: ArrayList<Deput
     class DeputyView(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(name: String, image: String) {
             itemView.textView_deputyName.text = name
-            Picasso.get().load("http://169.254.145.182/test${image.substring(1)}")
-                    .fit().into(itemView.imageView_deputyImage)
+            if (image != "") {
+                Picasso.get().load("http://169.254.145.182/test${image.substring(1)}")
+                        .fit().into(itemView.imageView_deputyImage)
+            }
         }
 
     }
