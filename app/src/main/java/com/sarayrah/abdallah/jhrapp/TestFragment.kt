@@ -25,13 +25,13 @@ class TestFragment : Fragment() {
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.fragment_test, container, false)
 
-        fragmentAdp = FPA(this.fragmentManager!!)
+        /*fragmentAdp = FPA(this.fragmentManager!!)
         v.vp.adapter = fragmentAdp
 
         v.vp.addOnPageChangeListener(android.support.design.widget.TabLayout
                 .TabLayoutOnPageChangeListener(v.tabs))
 
-        v.tabs.addOnTabSelectedListener(android.support.design.widget.TabLayout.ViewPagerOnTabSelectedListener(v.vp))
+        v.tabs.addOnTabSelectedListener(android.support.design.widget.TabLayout.ViewPagerOnTabSelectedListener(v.vp))*/
 
         return v
     }

@@ -7,30 +7,14 @@
     tools:context="com.sarayrah.abdallah.jhrapp.TestFragment"
     tools:layout_editor_absoluteY="81dp">
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs"
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
         android:layout_width="0dp"
+        sr
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="مهام اللجنة" />
-
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="الاعضاء" />
-    </android.support.design.widget.TabLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+        app:layout_constraintTop_toTopOf="parent" />-->
 
 </android.support.constraint.ConstraintLayout>

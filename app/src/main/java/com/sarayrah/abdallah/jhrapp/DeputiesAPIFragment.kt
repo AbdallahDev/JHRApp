@@ -15,6 +15,7 @@ import com.android.volley.toolbox.Volley
 import com.sarayrah.abdallah.jhrapp.adapters.DeputiesAPIAdapter
 import com.sarayrah.abdallah.jhrapp.models.DeputyAPIModel
 import kotlinx.android.synthetic.main.fragment_deputies_api.*
+import kotlinx.android.synthetic.main.fragment_deputies_api.view.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -43,11 +44,16 @@ class DeputiesAPIFragment : Fragment() {
                 deputiesList.add(DeputyAPIModel(
                         response.getJSONObject(index).getString("RepresentativeName"),
                         response.getJSONObject(index).getString("fldPhoto")))
+
+                if (response.getJSONObject(index).getString("fldPhoto") != "") {
+                    Toast.makeText(this.activity!!, response.getJSONObject(index)
+                            .getString("fldPhoto").substring(1), Toast.LENGTH_SHORT).show()
+                }
             }
 
             val adapter = DeputiesAPIAdapter(this.activity!!, deputiesList)
-            deputiesAPI_recyclerView.layoutManager = LinearLayoutManager(this.activity!!)
-            deputiesAPI_recyclerView.adapter = adapter
+            view.deputiesAPI_recyclerView.layoutManager = LinearLayoutManager(this.activity!!)
+            view.deputiesAPI_recyclerView.adapter = adapter
         },
                 Response.ErrorListener { error ->
                     Toast.makeText(this.activity!!, error.message, Toast.LENGTH_LONG).show()
