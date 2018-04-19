@@ -7,6 +7,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_test.*
 
 class TestActivity : AppCompatActivity() {
@@ -18,7 +19,7 @@ class TestActivity : AppCompatActivity() {
         val tr = Volley.newRequestQueue(this)
         val jar = JsonArrayRequest(Request.Method.GET, "http://169.254.145.182/test", null,
                 Response.Listener { response ->
-                    textView.text = response.toString()
+                    Picasso.get().load("")
                 }, Response.ErrorListener { error ->
             Toast.makeText(this, error.message, Toast.LENGTH_LONG).show()
         })

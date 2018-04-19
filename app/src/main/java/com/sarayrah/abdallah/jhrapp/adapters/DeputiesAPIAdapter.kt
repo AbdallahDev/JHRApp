@@ -23,7 +23,7 @@ class DeputiesAPIAdapter(val context: Context, private val list: ArrayList<Deput
         fun bind(name: String, image: String) {
             itemView.textView_deputyName.text = name
             if (image != "") {
-                Picasso.get().load("http://169.254.145.182/test${image.substring(1)}")
+                Picasso.get().load("http://193.188.88.148/test${image.substring(1)}")
                         .fit().into(itemView.imageView_deputyImage)
             }
         }

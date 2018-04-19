@@ -38,17 +38,12 @@ class DeputiesAPIFragment : Fragment() {
         val deputiesList = ArrayList<DeputyAPIModel>()
 
         val rq = Volley.newRequestQueue(this.activity!!)
-        val jar = JsonArrayRequest(Request.Method.GET, "http://169.254.145.182/test",
+        val jar = JsonArrayRequest(Request.Method.GET, "http://193.188.88.148/test",
                 null, Response.Listener { response ->
             for (index in 0 until response.length()) {
                 deputiesList.add(DeputyAPIModel(
                         response.getJSONObject(index).getString("RepresentativeName"),
                         response.getJSONObject(index).getString("fldPhoto")))
-
-                if (response.getJSONObject(index).getString("fldPhoto") != "") {
-                    Toast.makeText(this.activity!!, response.getJSONObject(index)
-                            .getString("fldPhoto").substring(1), Toast.LENGTH_SHORT).show()
-                }
             }
 
             val adapter = DeputiesAPIAdapter(this.activity!!, deputiesList)
