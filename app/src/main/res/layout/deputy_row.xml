@@ -11,10 +11,10 @@
         android:layoutDirection="rtl"
         android:orientation="horizontal">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView_deputyImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_margin="8dp"
             android:contentDescription="@string/deputy_image"
             android:src="@drawable/ic_launcher_background" />
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/deputy_name"/>
+            android:text="@string/deputy_name" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
