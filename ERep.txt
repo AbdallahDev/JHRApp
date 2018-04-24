@@ -1,0 +1,8 @@
+View name: viewRepresentativeInfo
+
+Column names: RepresentativeName, fldPhoto, RepresentativeNameEn
+
+Connection string: <add name="DBConnection"
+connectionString="Data Source=10.77.4.110;Initial
+Catalog=PARLIAMENT;Persist Security Info=True;User ID=sa;Password=IT@sqlAdmin"
+providerName="System.Data.SqlClient" />
